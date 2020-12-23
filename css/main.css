@@ -16,7 +16,11 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 2.8em;
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 1.8em;
 }
 
 a {
@@ -24,12 +28,12 @@ a {
 }
 
 p {
-	margin-top: -1em;
+	margin-top: -1.2em;
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
 .p-header {
-	margin-top: -2em;
+	margin-top: -2.2em;
 }
 
 header {
@@ -129,21 +133,26 @@ nav {
 nav ul {
 	list-style: none;
 	overflow: hidden;
+	/* z-index: 1; */
+	/* display: block; */
 	/* margin-right: 20em; */
 }
 
 nav li {
 	float: left;
+	
 }
 
 nav li a {
-	/* display: block; */
+	display: block;
+	font-size: 19px;
 	font-family: 'Playfair Display', serif;
 	color: #575757;
 	text-align: center;
 	padding: 14px 26px;
+	line-height: 1em;
 	text-decoration: none;
-	z-index: 2;
+	/* margin-top: 20em; */
 }
 
 nav li a:hover {
@@ -153,7 +162,7 @@ nav li a:hover {
 
 nav span {
 	display: none;
-	z-index: 1;
+	z-index: 2;
 }
 
 /* Menu */
@@ -163,30 +172,46 @@ nav span {
 	cursor: pointer;
 }
 
+.menu-main {
+	display: block;
+}
+
+#menu {
+	display: none;
+}
+
 @media screen and (max-width: 600px) {
 	nav li a {
 		/* -webkit-transform: rotate(180deg); */
 		margin-right: 20em;
 	}
+
 	nav span {
 		display: block;
 	}
-	.menu-content {
+
+	.menu-main {
+		display: none;
+	}
+
+	#menu {
 		display: block;
+	}
+
+	.menu-content {
 		height: 100%;
 		width: 0;
 		position: fixed;
 		z-index: -1;
 		top: 0;
 		right: 0;
-		background-color: #cedfdf;
+		background-color: #ffffff;
 		overflow-x: hidden;
 		transition: 0.5s;
 		padding-top: 60px;
 		text-align: left;
 		margin-right: -2.8em;
 		margin-top: 0em;
-		display: block;
 	}
 }
 

@@ -15,14 +15,27 @@
     </header>
 
     <!-- Nav -->
-    <nav>
-        <ul>
-            <li><a href="index.html">work</a></li>
-            <li><a href="about.html" class="current-page">about</a></li>
-            <li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-    </nav>
+    <nav class="menu-icon" id="nav" onclick="toggleMenu()">
+		<div onclick="openMenu()">
+			<div onclick="menu(this)">
+				<span class="line-1"></span>
+				<span class="line-2"></span>
+				<span class="line-3"></span>
+			</div>
+		</div>
+		<ul class="menu-main">
+			<li><a href="index.html" class="current-page">work</a></li>
+			<li><a href="about.html">about</a></li>
+			<li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul>
+		<ul class="menu-content" id="menu">
+			<li><a href="index.html" class="current-page">work</a></li>
+			<li><a href="about.html">about</a></li>
+			<li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul>
+	</nav>
 
     <!-- Main Content -->
     <div class="container">
