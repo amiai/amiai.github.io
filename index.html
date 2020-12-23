@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="icon" href="images/favicon.png">
+	<title>Amy Nguyen</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<h1>Hi, I'm Amy —</h1>
+		<p class="p-header">I'm a current computer science student at RMIT with a passion for UI/UX Design and<br> a
+			keen enthusiasm
+			for designing visually engaging and user-friendly digital products.</p>
+	</header>
+
+	<!-- Nav -->
+	<nav class="menu-icon" id="nav" onclick="toggleMenu()">
+		<div onclick="openMenu()">
+			<div onclick="menu(this)">
+				<span class="line-1"></span>
+				<span class="line-2"></span>
+				<span class="line-3"></span>
+			</div>
+		</div>
+		<ul id="menu" class="menu-content">
+			<li><a href="index.html" class="current-page">work</a></li>
+			<li><a href="about.html">about</a></li>
+			<li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul>
+
+	</nav>
+
+	<!-- Main Content -->
+	<div class="container">
+		<div class="grid-item-1">
+			<h2>Booking System API</h2>
+			<p>How can we design and integrate a user-friendly booking system API?</p>
+			<div>
+				<span class="image">
+					<a href="booking_sys.html"><img src="images/booking_sys/booking_system_cover.png" alt="BookingSys"
+							id="img-hover"></a>
+				</span>
+			</div>
+		</div>
+		<div class="grid-item-2">
+			<h2>Furniture E-commerce App</h2>
+			<p>How can we promote the brand's aesthetic through UI/UX Design?</p>
+			<div>
+				<span class="image">
+					<a href="mokka.html"><img src="images/mokka/Final.png" alt="Mokka" id="img-hover"></a>
+				</span>
+			</div>
+		</div>
+		<div class="grid-item-3">
+			<h2>Study Planner App</h2>
+			<p>How can we improve student productivity, organisation and time management?</p>
+			<div>
+				<span class="image">
+					<a href="prostudi.html"><img src="images/prostudi/prostudi_cover.png" alt="ProStudi"
+							id="img-hover"></a>
+				</span>
+			</div>
+		</div>
+		<div class="grid-item-4">
+			<h2>Website Landing Page</h2>
+			<p>How will our landing page help attract potential customers?</p>
+			<div>
+				<span class="image">
+					<a href="rose.html"><img src="images/rose/landing page.png" alt="Rose" id="img-hover"></a>
+				</span>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<p>&#169; 2020 Amy Nguyen</p>
+		</footer>
+
+		<a id="go-to-top" href="#">&#8593;</a>
+	</div>
+
+	<!-- Scripts -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/go-to-top.js"></script>
+	<script src="js/menu.js"></script>
+
+</body>
+
+</html>
