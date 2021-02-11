@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
 html, body {
 	margin: 0;
+	text-align: center;
 	/* padding: 0; */
 	/* padding: 4em; */
 	color: #575757;
@@ -23,23 +24,35 @@ h2 {
 	font-size: 1.8em;
 }
 
-a {
+h3 {
+	font-size: 1.5em;
+}
+
+a, ul, li {
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
 p {
-	margin-top: -1.2em;
+	margin-top: 1em;
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+
+.p-content {
+	margin-top: -0.5em;
 }
 
 .p-header {
 	margin-top: -2.2em;
 }
 
+.p-small {
+	margin-top: 2em;
+}
+
 header {
 	/* background-color: #d1dedfc2; */
 	margin-top: 4em;
-	margin-bottom: -6em;
+	margin-bottom: 2em;
 	padding: 8em;
 }
 
@@ -52,15 +65,32 @@ footer {
 	width: 100%;
 }
 
+.sub-margin {
+	margin-top: 3em;
+	margin-bottom: -0.45em;
+}
+
+.sub-margin2 {
+	margin-top: 3em;
+}
+
 #about {
-	text-align: center;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
+	margin-top: -14em;
 }
 
 /* Container */
+
+.container-content {
+	position: relative;
+	text-align: left;
+	margin-top: -12em;
+	margin-left: 12em;
+	margin-right: 10em;
+	padding: 8em;
+	/* background-color: #f3d0e6be; */
+	column-gap: 2em;
+	row-gap: 3em;
+}
 
 .container {
 	position: relative;
@@ -272,7 +302,7 @@ nav span {
 	}
 } */
 
-/* Image */
+/* Image/Video */
 
 .image {
 	border: 0;
@@ -288,7 +318,43 @@ nav span {
 	max-width: 800px;
 }
 
-.btn {
+.self-image {
+	border: 0;
+	position: relative;
+}
+
+.self-image img {
+	margin-top: 4em;
+	border-radius: 12px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	max-width: 400px;
+	min-width: 300px;
+}
+
+.img-center {
+	border: 0;
+	position: relative;
+}
+
+.img-center img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1000px;
+	min-width: 400px;
+}
+
+.vid-center {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Buttons */
+
+.contact-btn {
 	border-radius: 0px;
 	border: 1.8px solid #575757;
 	color: #575757;
@@ -312,7 +378,36 @@ nav span {
 	transition-property: transform;
 }
 
-.btn:hover {
+.contact-btn:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.btn-small {
+	border-radius: 0px;
+	border: 1.8px solid #575757;
+	color: #575757;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 500;
+	height: 2em;
+	line-height: 2em;
+	min-width: 3em;
+	margin-top: 0.5em;
+	margin: 0.3em;
+	padding: 0 2em;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+
+.btn-small:hover {
 	-webkit-transform: scale(1.05);
 	transform: scale(1.05);
 }
