@@ -97,7 +97,7 @@ footer {
 @media screen and (max-width: 1420px) {
 	.about-margin {
 		margin-right: 15em;
-		margin-left: 12em;
+		margin-left: 15em;
 		text-align: left;
 	}
 }
@@ -105,7 +105,7 @@ footer {
 @media screen and (max-width: 1255px) {
 	.about-margin {
 		margin-right: 8em;
-		margin-left: 6em;
+		margin-left: 8em;
 		text-align: left;
 	}
 }
@@ -441,14 +441,14 @@ nav span {
 	border-radius: 12px;
 	display: block;
 	margin: 0 auto;
-	width: 100%;
+	width: 70%;
 	max-width: 1000px;
 	min-width: 300px;
 }
 
 .align-preview {
-	margin-top: -5em;
-	margin-bottom: 8em;
+	margin-top: -10em;
+	margin-bottom: 10em;
 }
 
 .vid-center {
