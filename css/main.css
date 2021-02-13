@@ -3,7 +3,7 @@
 html, body {
 	margin: 0;
 	text-align: center;
-	color: #575757;
+	color: #4e4e4e;
 }
 
 h1, h2, h3 {
@@ -26,7 +26,7 @@ h3 {
 	font-size: 1.75em;
 }
 
-a, ul, li {
+a, ol, ul, li {
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
@@ -37,7 +37,7 @@ p {
 }
 
 .p-sub {
-	margin-top: -1em;
+	margin-top: -1.5em;
 }
 
 .p-content {
@@ -46,10 +46,15 @@ p {
 
 .p-header {
 	margin-top: -2.2em;
+	margin-bottom: 6em;
 }
 
 .p-small {
 	margin-top: 2em;
+}
+
+.figure {
+	text-align: center;
 }
 
 header {
@@ -122,6 +127,9 @@ footer {
 	.about-margin {
 		margin-left: 0;
 		margin-right: 0;
+	}
+	.figure {
+		text-align: left;
 	}
 }
 
@@ -264,7 +272,7 @@ nav li a {
 	display: block;
 	font-size: 19px;
 	font-family: 'Playfair Display', serif;
-	color: #575757;
+	color: #4e4e4e;
 	text-align: center;
 	padding: 14px 26px;
 	line-height: 1em;
@@ -395,7 +403,7 @@ nav span {
 
 .image img {
 	margin-top: 1em;
-	border-radius: 12px;
+	border-radius: 20px;
 	display: block;
 	width: 100%;
 	max-width: 800px;
@@ -408,7 +416,7 @@ nav span {
 
 .self-image img {
 	margin-top: 4em;
-	border-radius: 12px;
+	border-radius: 20px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -424,7 +432,7 @@ nav span {
 
 .img-center img {
 	margin-top: 1em;
-	border-radius: 12px;
+	border-radius: 20px;
 	display: block;
 	margin: 0 auto;
 	width: 100%;
@@ -438,7 +446,7 @@ nav span {
 }
 
 .img-preview img {
-	border-radius: 12px;
+	border-radius: 20px;
 	display: block;
 	margin: 0 auto;
 	width: 70%;
