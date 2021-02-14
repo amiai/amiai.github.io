@@ -85,8 +85,8 @@ footer {
 /* About */
 
 .about-margin {
-	margin-right: 26em;
-	margin-left: 26em;
+	margin-right: 23em;
+	margin-left: 23em;
 	text-align: left;
 }
 
@@ -99,7 +99,7 @@ footer {
 	text-align: left;
 }
 
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 1440px) {
 	.about-margin {
 		margin-right: 15em;
 		margin-left: 15em;
