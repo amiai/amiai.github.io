@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:ital,wght@1,200&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 html, body {
 	margin: 0;
-	text-align: center;
-	color: #4e4e4e;
+	text-align: left;
+	color: #000000;
 }
 
 h1, h2, h3 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
 	line-height: 1.85;
 	margin: 0 0 0.7em 0;
@@ -15,15 +16,24 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 64px;
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 48px;
 }
 
 h3 {
-	font-size: 1.75em;
+	font-size: 32px;
+}
+
+.h2-md {
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+#contrast-colour {
+    color: #004CE0;
 }
 
 a, ol, ul, li {
@@ -32,12 +42,13 @@ a, ol, ul, li {
 
 p {
 	margin-top: 1em;
-	font-size: 1.075em;
+	font-size: 16px;
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
 .p-sub {
-	margin-top: -1.5em;
+	margin-top: -1.3em;
+    font-family: 'Poppins', sans-serif;
 }
 
 .p-content {
@@ -61,17 +72,39 @@ header {
 	/* background-color: #d1dedfc2; */
 	margin-top: 4em;
 	margin-bottom: 2em;
-	padding: 8em;
+	padding: 12em;
 }
 
 footer {
 	/* background-color: #b6e4c2c2; */
-	text-align: center;
+    font-family: 'Poppins', sans-serif;
+	text-align: left;
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	width: 100%;
+	width: 50%;
+    padding: 3em 0 5em 12em;
 }
+
+.footer-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.footer-link:hover {
+    transition: 0.3s ease-in;
+    color: #004CE0;
+}
+
+.footer-div {
+    margin: 0 1em 0 1em;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Margin Styling */
 
 .sub-margin {
 	margin-top: 3em;
@@ -80,6 +113,10 @@ footer {
 
 .sub-margin2 {
 	margin-top: 3em;
+}
+
+.mt-1 {
+    margin-top: 0.7em;
 }
 
 /* About */
@@ -192,10 +229,14 @@ footer {
 	position: relative;
 	display: grid;
 	margin-top: -10em;
-	padding: 5em;
+	padding: 12em;
 	/* background-color: #f3d0e6be; */
 	column-gap: 2em;
 	row-gap: 3em;
+}
+
+.container-body {
+    margin-bottom: 11em;
 }
 
 .grid-item-1 {
@@ -209,6 +250,7 @@ footer {
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row: 2;
+    margin-top: 11em;
 	/* background-color: #bdc6e6fa; */
 }
 
@@ -216,6 +258,7 @@ footer {
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row: 3;
+    margin-top: 11em;
 	/* background-color: #bdc6e6fa; */
 }
 
@@ -223,6 +266,7 @@ footer {
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row: 4;
+    margin-top: 11em;
 	/* background-color: #bdc6e6fa; */
 }
 
@@ -235,7 +279,7 @@ footer {
 }
 
 .current-page {
-	color: #63a4a8c2;
+	color: #004CE0;
 }
 
 /* Nav */
@@ -270,9 +314,10 @@ nav li {
 
 nav li a {
 	display: block;
-	font-size: 19px;
-	font-family: 'Playfair Display', serif;
-	color: #4e4e4e;
+	font-size: 18px;
+    font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	color: #000000;
 	text-align: center;
 	padding: 14px 26px;
 	line-height: 1em;
@@ -281,7 +326,7 @@ nav li a {
 }
 
 nav li a:hover {
-	color: #63a4a8c2;
+	color: #004CE0;
 	transition: 0.2s ease-in;
 }
 
@@ -403,7 +448,7 @@ nav span {
 
 .image img {
 	margin-top: 1em;
-	border-radius: 20px;
+	border-radius: 15px;
 	display: block;
 	width: 100%;
 	max-width: 800px;
@@ -416,7 +461,7 @@ nav span {
 
 .self-image img {
 	margin-top: 4em;
-	border-radius: 20px;
+	border-radius: 15px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -468,8 +513,8 @@ nav span {
 
 .main-btn {
 	border-radius: 0px;
-	border: 1.8px solid #575757;
-	color: #575757;
+	border: 1.8px solid #000000;
+	color: #000000;
 	cursor: pointer;
 	display: inline-block;
 	font-weight: 500;
@@ -497,8 +542,8 @@ nav span {
 
 .btn-small {
 	border-radius: 0px;
-	border: 1.8px solid #575757;
-	color: #575757;
+	border: 1.8px solid #000000;
+	color: #000000;
 	cursor: pointer;
 	display: inline-block;
 	font-weight: 500;
@@ -525,12 +570,12 @@ nav span {
 }
 
 .contact {
-	text-align: center;
+	text-align: left;
 }
 
 #go-to-top {
 	text-decoration: none;
-	color: #575757;
+	color: #000000;
 	font-size: 3em;
 	font-weight: 300;
 	position: fixed;
