@@ -12,37 +12,53 @@
 <body>
     <header class="contact">
         <h2>Say hello!</h2>
-        <!-- <p>nguyena.amy@gmail.com</p> -->
-        <a href="https://www.linkedin.com/in/amy-nguyen-6a862119b/" target="_blank" class="main-btn">LinkedIn</a>
-        <a href="mailto:nguyena.amy@gmail.com" class="main-btn">nguyena.amy@gmail.com</a>
+        <div style="margin-top: -1em;">
+            <a href="https://www.linkedin.com/in/amy-nguyen-6a862119b/" target="_blank" class="main-btn">LinkedIn</a>
+            <a href="mailto:nguyena.amy@gmail.com" class="main-btn">nguyena.amy@gmail.com</a>
+        </div>
     </header>
 
     <!-- Nav -->
     <nav class="menu-icon" id="nav" onclick="toggleMenu()">
-		<div onclick="openMenu()">
-			<div onclick="menu(this)">
-				<span class="line-1"></span>
-				<span class="line-2"></span>
-				<span class="line-3"></span>
-			</div>
-		</div>
-		<ul class="menu-main">
-			<li><a href="index.html">work</a></li>
-			<li><a href="about.html">about</a></li>
-			<li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
-			<li><a href="contact.html" class="current-page">contact</a></li>
-		</ul>
-		<ul class="menu-content" id="menu">
-			<li><a href="index.html">work</a></li>
-			<li><a href="about.html">about</a></li>
-			<li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
-			<li><a href="contact.html" class="current-page">contact</a></li>
-		</ul>
-	</nav>
+        <div onclick="openMenu()">
+            <div onclick="menu(this)">
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+            </div>
+        </div>
+        <ul class="menu-main">
+            <li><a href="index.html">work</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
+            <li><a href="contact.html" class="current-page">contact</a></li>
+        </ul>
+        <ul class="menu-content" id="menu">
+            <li><a href="index.html">work</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
+            <li><a href="contact.html" class="current-page">contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Footer -->
     <footer>
-        <p>&#169; 2020 Amy Nguyen</p>
+        <div>
+            <span>
+                <a href="mailto:nguyena.amy@gmail.com" class="footer-link"
+                    id="contrast-colour">nguyena.amy@gmail.com</a>
+            </span>
+            <span class="footer-div">/</span>
+            <span>
+                <a href="https://www.linkedin.com/in/amy-nguyen-6a862119b/" class="footer-link"
+                    target="_blank">LinkedIn</a>
+            </span>
+            <span class="footer-div">/</span>
+            <span>
+                <a href="images/Resume.pdf" download="Amy_Nguyen_Resume" class="footer-link">Resume</a>
+            </span>
+        </div>
+        <p>&#169; 2021 Amy Nguyen</p>
     </footer>
 
     <!-- Scripts -->
