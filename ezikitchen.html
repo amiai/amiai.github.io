@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="icon" href="images/favicon.png">
+    <title>Amy Nguyen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header>
+        <h2 style="text-align: center;">EziKitchen Landing Page</h2>
+    </header>
+
+    <!-- Content Preview -->
+    <div class="align-preview">
+        <span class="img-preview"><img src="images/ezikitchen/e_preview.png" alt="" /></span>
+    </div>
+
+    <!-- Right Nav -->
+    <nav class="menu-icon" id="nav-right" onclick="toggleMenu()">
+        <div onclick="openMenu()">
+            <div onclick="menu(this)">
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+            </div>
+        </div>
+        <ul class="menu-main">
+            <li><a href="index.html">work</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <ul class="menu-content" id="menu">
+            <li><a href="index.html">work</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Left Nav -->
+    <nav id="nav-left">
+        <ul>
+            <li><a href="index.html" class="brand">Amy Nguyen</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-content">
+        <h3>Project Overview —</h3>
+        <p><b>Design Problem</b></p>
+        <p class="p-content">
+            How can we design and integrate a user-friendly booking system API? Our main
+            focus was to design and create a fully functional API with a variety of features that was intuitive
+            and easy to use for our target users. Features primarily targeted booking functionality such as
+            allowing customers to create bookings, view past bookings, and edit bookings.
+        </p>
+        <p class="p-small"><b>Design Approach</b></p>
+        <p class="p-content">
+            Using agile concepts we utilised a scrum process as we were required to complete the project in a
+            limited amount of time. This allowed us to work in short sprints to efficiently complete
+            the tasks required.
+        </p>
+        <p class="p-small"><b>Team</b></p>
+        <p class="p-content">
+            This project was created and completed as a team consisting of 5 members. Roles were
+            split into Front-end and Back-end Development. A Scrum Master was also assigned to ensure the scrum
+            process and the overall project was on track.
+        </p>
+        <p class="p-small"><b>Role</b></p>
+        <p class="p-content">
+            My role mainly focused on wireframes, front-end development and front-end testing.
+        </p>
+        <p class="p-small"><b>Tools</b></p>
+        <p class="p-content">
+        <ul>
+            <li>Figma</li>
+            <li>AdobeXD</li>
+            <li>Notion</li>
+            <li>ClickUp</li>
+            <li>React / HTML</li>
+            <li>Git + Github</li>
+            <li>Spring Boot</li>
+        </ul>
+        </p>
+        <h3 class="sub-margin">User Stories —</h3>
+        <p>User stories detailed various scenarios for the three users determined: Customer, Worker, and Admin.
+            User stories were an important stage in the process because it ensured features and functionalities
+            required
+            were distinctly laid out. It also elaborates the specific user that would be interacting with that
+            feature/functionality. By identifying multiple scenarios for each individual user, we were able to gain
+            a clear outlook on the final product, which allowed us to appropriately plan out tasks for each sprint.
+        </p>
+        <div style="margin-top: 3.5em;">
+            <span class="img-center"><img class="resize" src="images/booking_sys/user_stories.png" alt="" /></span>
+        </div>
+        <br><br>
+        <h3 class="sub-margin">Wireframes —</h3>
+        <p>Wireframes were made for each page of the website and for each feature required by the client. Figma
+            was used to create the wireframes which allowed the team to access the wireframes whenever needed in
+            order for each team member to build and develop their allocated feature. Using Figma as a collaborative
+            tool ensured the team was on the right page in terms of UI design, as well as providing the team
+            with the ability to make revisions during team meetings. Based on the user stories, I created multiple
+            wireframes
+            for the features accessible to the three users that were determined: Customer, Worker, and Admin.
+        </p>
+        <div class="p-small">
+            <span class="img-center"><img src="images/booking_sys/wireframes/Home.png" alt="" /></span>
+        </div>
+        <div class="p-small">
+            <span class="img-center"><img src="images/booking_sys/wireframes/Booking Form.png" alt="" /></span>
+        </div>
+        <div class="p-small">
+            <span class="img-center"><img src="images/booking_sys/wireframes/Dashboard Page.png" alt="" /></span>
+        </div>
+
+        <h3 class="sub-margin">Acceptance Testing —</h3>
+        <p>Acceptance tests were written up in accordance to the user stories created and the number of
+            features we were required to test. Detailing a list of acceptance tests allowed the team to
+            easily confirm the product was functioning correctly and ensured any tests required were not missing.
+            Each acceptance test was also labelled with a test case ID and the user story number it correlates to.
+            Using this method enabled the team to perform tests more efficiently and check off ones that have
+            been successfully completed and passed.
+        </p>
+        <div style="margin-top: 3.5em;">
+            <span class="img-center"><img src="images/booking_sys/acceptance_tests.png" alt="" /></span>
+        </div>
+        <br>
+        <h3 class="sub-margin">Test Cases —</h3>
+        <p>Test cases were executed to test whether the required features and functionalities were working
+            as expected. Test cases were performed at the end of every sprint. Failed cases and issues found were
+            finalised and collected for revision. By performing test cases, the team was able to keep track of
+            issues that needed attention. After compiling a list of noticeable concerns, we would then address them
+            and find solutions in order to solve the issue at hand before finalising the sprint.
+        </p>
+        <div style="margin-top: 3.5em;">
+            <span class="img-center"><img src="images/booking_sys/test_cases.png" alt="" /></span>
+        </div>
+        <br>
+        <h3 class="sub-margin">Final —</h3>
+        <p class="p-small"><b>Figure 1.1</b></p>
+        <p class="p-content">
+            The booking page allows customers to select the service and employee they want, as well as their
+            preferred date and time. We decided to leave a prompt in the date/time section in the case that
+            the user has not yet selected a service and employee. This is because each employee has their own
+            working schedule so certain times will be unavailable. After the user selects their service and
+            employee, the times available will be present for selection.
+        </p>
+        <p class="p-small"><b>Figure 1.2</b></p>
+        <p class="p-content">
+            The landing page features multiple 'call-to-action' buttons for users who have not signed up. I decided
+            to implement it throughout the landing page in order to help prompt users into signing up and engaging
+            with the product. I also aimed to emphasise the key features and benefits of the product through a clean
+            and succinct manner to attract potential customers.
+        </p>
+        <div class="p-small" style="margin-top: 3.5em;">
+            <span class="img-center"><img src="images/booking_sys/booking_sys_final_2.png" alt="" /></span>
+        </div>
+        <p class="figure"><b>Figure 1.1 —</b> Customer dashboard and customer booking pages</p>
+        <div class="p-small" style="margin-top: 6em;">
+            <span class="img-center"><img src="images/booking_sys/booking_sys_final.png" alt="" /></span>
+        </div>
+        <p class="figure"><b>Figure 1.2 —</b> Landing page</p>
+
+        <h3 class="sub-margin">Reflection —</h3>
+        <p><b>What do you think was done well?</b></p>
+        <p class="p-content">
+            Team meetings were planned and organised well. Frequent
+            meetings were conducted which allowed the team to discuss current progress and tasks that needed
+            more attention. Also helped the team to review each sprint in depth and suggest improvements. The
+            project was also done remotely as a result of COVID-19, however, we were still able to efficiently
+            conduct productive meetings using Microsoft Teams.
+        </p>
+        <p class="p-small"><b>What could have been improved?</b></p>
+        <p class="p-content">
+            Improvements that could have been made is better management of tasks and Github control. This includes
+            time management and allocation of tasks. If tasks were allocated according to individual skill sets,
+            I believe we could have more effective and productive outcomes. When there were problems with a certain
+            task, it would be pushed back into the next sprint if it was unable to be solved and fixed within the
+            given
+            time frame, which decreased our level of time efficiency. To improve on this, more meetings could have
+            be arranged to discuss solutions to tackle the problem.
+        </p>
+        <p class="p-small"><b>What would I do differently if I were to approach the same problem again?</b></p>
+        <p class="p-content">
+            I would ensure tasks were allocated appropriately as well as organising team meetings for issues that
+            need
+            attention. By approaching these problems in this manner, I believe time management can be improved and
+            efficiency of work can be increased.
+        </p>
+        <div class="next">
+            <a href="prostudi.html" class="main-btn">Next Project&nbsp;&nbsp;></a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer-alt">
+            <div>
+                <span>
+                    <a href="mailto:nguyena.amy@gmail.com" class="footer-link"
+                        id="contrast-colour">nguyena.amy@gmail.com</a>
+                </span>
+                <span class="footer-div">/</span>
+                <span>
+                    <a href="https://www.linkedin.com/in/amy-nguyen-6a862119b/" class="footer-link"
+                        target="_blank">LinkedIn</a>
+                </span>
+                <span class="footer-div">/</span>
+                <span>
+                    <a href="images/Resume.pdf" download="Amy_Nguyen_Resume" class="footer-link">Resume</a>
+                </span>
+            </div>
+            <p>&#169; 2021 Amy Nguyen</p>
+        </footer>
+        <a id="go-to-top" href="#">&#8593;</a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/go-to-top.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>
