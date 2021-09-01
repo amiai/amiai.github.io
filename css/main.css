@@ -51,6 +51,12 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
+.p-sub-right {
+	margin-top: -1.3em;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+}
+
 .p-content {
 	margin-top: -0.5em;
 }
@@ -58,6 +64,10 @@ p {
 .p-header {
 	margin-top: -2.2em;
 	margin-bottom: 6em;
+}
+
+.header-right {
+    text-align: right;
 }
 
 .index-header {
@@ -125,7 +135,7 @@ footer {
 	margin-top: 3em;
 }
 
-.mt-1 {
+#mt-1 {
     margin-top: 0.7em;
 }
 
@@ -249,42 +259,22 @@ footer {
 }
 
 .grid-item-1 {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row: 1;
-	/* background-color: #bdc6e6fa; */
+    float: right;
 }
 
 .grid-item-2 {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row: 2;
+    float: left;
     margin-top: 11em;
-	/* background-color: #bdc6e6fa; */
 }
 
 .grid-item-3 {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row: 3;
+    float: right;
     margin-top: 11em;
-	/* background-color: #bdc6e6fa; */
 }
 
 .grid-item-4 {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row: 4;
+    float: left;
     margin-top: 11em;
-	/* background-color: #bdc6e6fa; */
-}
-
-.grid-item-5 {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row-start: 5;
-	grid-row-end: 5;
-	/* background-color: #bdc6e6fa; */
 }
 
 .current-page {
@@ -292,8 +282,6 @@ footer {
 }
 
 /* Nav */
-
-/* background-color: #d8cde4da; */
 
 /* position: absolute;
 	top: 0;
