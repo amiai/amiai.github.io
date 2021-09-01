@@ -356,6 +356,12 @@ nav span {
 	display: none;
 }
 
+@media screen and (max-width: 825px) {
+    #nav-left {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
 	nav li a {
 		/* -webkit-transform: rotate(180deg); */
@@ -367,9 +373,6 @@ nav span {
 	.menu-main {
 		display: none;
 	}
-    #nav-left {
-        display: none;
-    }
 	#menu {
 		display: block;
 	}
