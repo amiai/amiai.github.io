@@ -304,9 +304,13 @@ nav {
 	margin: 2em;
 	position: absolute;
 	top: 0;
-	right: 0;
 	/* clear: both; */
 	z-index: 1;
+}
+
+#nav-right {
+	right: 0;
+    margin: 2.3em 4em 0 0;
 }
 
 nav ul {
@@ -346,6 +350,10 @@ nav span {
 
 /* Menu */
 
+.brand {
+    font-size: 26px;
+}
+
 .menu-icon {
 	/* display: inline-block; */
 	cursor: pointer;
@@ -370,6 +378,9 @@ nav span {
 	.menu-main {
 		display: none;
 	}
+    #nav-left {
+        display: none;
+    }
 	#menu {
 		display: block;
 	}
