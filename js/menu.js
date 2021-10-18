@@ -13,7 +13,7 @@ function toggleMenu() {
 }
 
 function openMenu() {
-    document.getElementById('menu').style.width = "100%";
+    document.getElementById('menu').style.width = "110%";
     if (count % 2 == 1) {
         closeMenu();
     }

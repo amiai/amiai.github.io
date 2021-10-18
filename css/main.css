@@ -318,7 +318,7 @@ nav {
 
 #nav-right {
 	right: 0;
-    margin: 2.3em 4em 0 0;
+    margin: 2.3em 2.5em 0 0;
 }
 
 nav ul {
@@ -376,6 +376,10 @@ nav span {
 	display: none;
 }
 
+.menu-content {
+    display: none;
+}
+
 @media screen and (max-width: 1200px) {
     #nav-left {
         display: none;
@@ -407,9 +411,10 @@ nav span {
 		overflow-x: hidden;
 		transition: 0.5s;
 		padding-top: 60px;
+        padding-left: 3em;
 		text-align: left;
         /* Set width/size of white side bar */
-		margin-right: 0em;
+		margin-right: -2.8em;
 		margin-top: 0em;
 	}
 }
