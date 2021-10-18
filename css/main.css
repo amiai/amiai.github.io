@@ -72,7 +72,7 @@ p {
 
 .index-header {
     /* background-color: #d1dedfc2; */
-    padding-right: 40%;
+    /* padding-right: 40%; */
 }
 
 .p-small {
@@ -87,6 +87,48 @@ header {
 	/* background-color: #d1dedfc2; */
 	margin-top: 4em;
 	padding: 12em;
+}
+
+@media screen and (max-width: 1374px) {
+	header {
+        margin-top: 4em;
+        padding: 8em;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	header {
+        margin-top: 4em;
+        padding: 6em 3em 6em 3em;
+	}
+}
+
+@media screen and (max-width: 1185) {
+	header {
+        margin-top: 4em;
+        padding: 6em 2em 6em 2em;
+	}
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 1085) {
+	header {
+        margin-top: 4em;
+        padding: 6em 0em 6em 0em;
+	}
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
 }
 
 footer {
