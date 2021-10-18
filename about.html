@@ -6,72 +6,80 @@
     <title>Amy Nguyen</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-    <header>
-        <h2 class="index-header">A little bit about me</h2>
-    </header>
+    <div class="container-fluid">
 
-    <!-- Right Nav -->
-    <nav class="menu-icon" id="nav-right" onclick="toggleMenu()">
-        <div onclick="openMenu()">
-            <div onclick="menu(this)">
-                <span class="line-1"></span>
-                <span class="line-2"></span>
-                <span class="line-3"></span>
+        <!-- Right Nav -->
+        <nav class="menu-icon" id="nav-right" onclick="toggleMenu()">
+            <div onclick="openMenu()">
+                <div onclick="menu(this)">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
             </div>
-        </div>
-        <ul class="menu-main">
-            <li><a href="index.html">work</a></li>
-            <li><a href="about.html" class="current-page">about</a></li>
-            <li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-        <ul class="menu-content" id="menu">
-            <li><a href="index.html">work</a></li>
-            <li><a href="about.html" class="current-page">about</a></li>
-            <li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-    </nav>
+            <ul class="menu-main">
+                <li><a href="index.html">work</a></li>
+                <li><a href="about.html" class="current-page">about</a></li>
+                <li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            <ul class="menu-content" id="menu">
+                <li><a href="index.html">work</a></li>
+                <li><a href="about.html" class="current-page">about</a></li>
+                <li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
 
-    <!-- Left Nav -->
-    <nav id="nav-left">
-        <ul>
-            <li><a href="index.html" class="brand">Amy Nguyen</a></li>
-        </ul>
-    </nav>
+        <!-- Left Nav -->
+        <nav id="nav-left">
+            <ul>
+                <li><a href="index.html" class="brand">Amy Nguyen</a></li>
+            </ul>
+        </nav>
 
-    <!-- Main Content -->
-    <div class="container" id="about">
-        <div class="container-body">
-            <div class="grid-item-1">
-                <p>I'm Amy and I'm currently studying Computer Science at RMIT University. I have
-                    been mentored at SEEK and have gained industry knowledge surrounding UX which has
-                    encouraged me to further my study. Through the study of my course, I have also studied User-Centered
-                    Design which has deepened my knowledge on UI/UX design as well as developing greater interest for
-                    it.
-                    My previous team experience involving the application of agile concepts through scrum
-                    processes has also enabled me the ability to better understandand utilise my
-                    knowledge throughout various stages of the development process.
 
-                    <br><br>As a student surrounded by constantly new and emerging technology, I believe that
-                    UI/UX design has become so much more noticeable and important than ever before. And I believe that
-                    good UX can determine a user's opinion of the brand and its message.
-                </p>
+        <header>
+            <h2>A little bit about me</h2>
+
+            <!-- Main Content -->
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center" id="about-margin">
+                        <p>I'm Amy and I'm currently studying Computer Science at RMIT University. I have
+                            been mentored at SEEK and have gained industry knowledge surrounding UX which has
+                            encouraged me to further my study. Through the study of my course, I have also studied
+                            User-Centered
+                            Design which has deepened my knowledge on UI/UX design as well as developing greater
+                            interest
+                            for
+                            it.
+                            My previous team experience involving the application of agile concepts through scrum
+                            processes has also enabled me the ability to better understandand utilise my
+                            knowledge throughout various stages of the development process.
+
+                            <br><br>As a student surrounded by constantly new and emerging technology, I believe that
+                            UI/UX design has become so much more noticeable and important than ever before. And I
+                            believe
+                            that
+                            good UX can determine a user's opinion of the brand and its message.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="grid-item-2">
-                <span class="self-image">
-                    <img src="/images/selfphoto.jpg" alt="Self Photo" />
-                </span>
+            <div class="row">
+                <div class="col"><img src="/images/signature.png" alt="Signature" class="signature"/>
+                </div>
             </div>
-        </div>
 
-        <!-- Footer -->
-        <footer>
-            <div>
+            <!-- Footer -->
+            <div style="margin-top: 12em;">
                 <span>
                     <a href="mailto:nguyena.amy@gmail.com" class="footer-link"
                         id="contrast-colour">nguyena.amy@gmail.com</a>
@@ -85,9 +93,10 @@
                 <span>
                     <a href="images/Resume.pdf" download="Amy_Nguyen_Resume" class="footer-link">Resume</a>
                 </span>
+                <p>&#169; 2021 Amy Nguyen</p>
             </div>
-            <p>&#169; 2021 Amy Nguyen</p>
-        </footer>
+
+        </header>
     </div>
 
     <!-- Scripts -->

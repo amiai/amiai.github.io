@@ -8,19 +8,7 @@ function menu(x) {
 function toggleMenu() {
     var menu = document.getElementById('menu');
     var x = window.matchMedia("(max-width: 600px)");
-
-    // if (menu.style.display == "block" && x.matches) {
-    //     menu.style.display = "none";
-    // }
-    // else if (menu.style.display == "none" && x.matches) {
-    //     menu.style.display = "block";
-    // }
-    // else if (menu.style.display == "none" && !x.matches) {
-    //     menu.style.display = "block";
-    // }
-    // else {
-    //     menu.style.display = "block";
-    // }
+    
     count += 1;
 }
 
