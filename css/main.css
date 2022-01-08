@@ -38,6 +38,7 @@ h3 {
 
 a, ol, ul, li {
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    line-height: 28px;
 }
 
 li {
