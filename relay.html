@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="icon" href="images/favicon.png">
+    <title>Relay | Amy Nguyen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header>
+        <h2 style="text-align: center;">Text Messaging App</h2>
+    </header>
+
+    <!-- Content Preview -->
+    <div class="align-preview">
+        <span class="img-preview"><img src="images/relay/r_preview.png" alt="" /></span>
+    </div>
+
+    <!-- Right Nav -->
+    <nav class="menu-icon" id="nav-right" onclick="toggleMenu()">
+        <div onclick="openMenu()">
+            <div onclick="menu(this)">
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+            </div>
+        </div>
+        <ul class="menu-main">
+            <li><a href="index.html">work</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <ul class="menu-content" id="menu">
+            <li><a href="index.html">work</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Left Nav -->
+    <nav id="nav-left">
+        <ul>
+            <li><a href="index.html" class="brand">Amy Nguyen</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-content">
+        <h3>Project Overview —</h3>
+        <p><b>Design Problem</b></p>
+        <p class="p-content">
+            Our primary goal was to design and develop a secure text messaging application. The team listed out a set 
+            of objectives that were required to be implemented. The objectives were based on the project deliverables presented by the client. 
+            This included the need to ensure the platform was user-friendly and intuitive, particularly for first-time users. 
+            Consistent testing and redesign was required where improvements were to be made. 
+        </p>
+        <p class="p-small"><b>Design Approach</b></p>
+        <p class="p-content">
+            Using agile development concepts we utilised a scrum process as we were required to complete the project in a
+            limited amount of time. This allowed us to work in short sprints to efficiently complete
+            the tasks required.
+        </p>
+        <p class="p-small"><b>Team</b></p>
+        <p class="p-content">
+            This project was completed as a team consisting of 5 members. Roles were assigned based on the project's
+            Product and Sprint Backlog Items. 
+        </p>
+        <p class="p-small"><b>Role</b></p>
+        <p class="p-content">
+            My tasks mainly consisted of creating mock ups and full-stack development. Additionally, I took on the role of
+            Scrum Master, taking note of the team and the project's status. As a Scrum Master, I maintained sprints and was
+            required to actively take part in the design and development process.  
+        </p>
+        <p class="p-small"><b>Tools</b></p>
+        <p class="p-content">
+        <ul>
+            <li>Figma</li>
+            <li>React</li>
+            <li>HTML/CSS</li>
+            <li>Python</li>
+            <li>Django</li>
+            <li>Heroku</li>
+            <li>AWS</li>
+            <li>Git + Github</li>
+            <li>Trello</li>
+        </ul>
+        </p>
+
+        <h3 class="sub-margin">Stakeholders + End Users —</h3>
+        <p>
+            The project's stakeholders and end users were determined prior to the design and development of the product. It was necessary
+            to understand not only our target audience, but those that will be using the application. The purpose of this project was
+            to design and develop a messaging platform for companies and businesses, particularly project teams, to discuss either
+            personal or professional-level projects and tasks. From this analysis of our end and target users, it was imperative that the
+            application was securely encrypted for confidential discussions. This was a large feature of the system that had to be constantly
+            tested through every sprint and stage of the development process. 
+        </p>
+        <h3 class="sub-margin">User Stories —</h3>
+        <p>
+            User stories played a large importance in the creation and basis of the team's product/sprint backlog items. Through
+            detailed user stories, the team was able to gage user needs, tasks and the outcomes that our target user would expect
+            on completion of a certain action or task. To aid with the development of the application, acceptance criterias were
+            also required as they enabled the team with a solid grasp on a feature's 'Definition of Done'. User stories from each
+            main feature/deliverable was created to solidify the team's understanding of the product requirements and to ensure
+            the application performs in a manner that is expected by the user.
+        </p>
+        <div style="margin-top: 1.5em; margin-bottom: -2em;">
+            <span class="img-center"><img src="images/relay/relay_user_stories.png" alt="" /></span>
+        </div>
+        <h3 class="sub-margin">Information Architecture [Site Map] —</h3>
+        <p>
+            A site map was created to organise where features were located in the app and to visualise how accessible
+            each feature was to the user. It was vital that related features were grouped together to allow the user to
+            easily access features without being presented with unrelated features where it is unexpected. Ensuring the system's
+            information architecture was well-structured would allow for a smoother user experience, and would satisfy the product's
+            condition for a user-friendly and intuitive platform. 
+        </p>
+        <div style="margin-top: 2.5em;">
+            <span class="img-center"><img src="images/relay/relay_site_map.png" alt="" /></span>
+        </div>
+        <br>
+        <h3 class="sub-margin">User Flow —</h3>
+        <p>
+            A user flow diagram was created to depict how users would navigate through the system while performing a specific
+            task. The purpose of the user flow was to help the team understand how a user would go through the application and to
+            discern whether it was organised and structured in a way that was simple and intuitive enough for users to use. The user
+            flow was based off the site map in order to get a grasp of where features were going to be located for users. The diagram
+            below details a user flow for the sign up task/feature. Multiple user flows were created for each feature in order 
+            to visualise how users will interact with the application, ensuring that it performs in a way that is expected by the user.
+        </p>
+        <div style="margin-top: 2.5em;">
+            <span class="img-center"><img src="images/relay/relay_user_flow.png" alt="" /></span>
+        </div>
+        <br>
+        <h3 class="sub-margin">Acceptance Testing —</h3>
+        <p>
+            Acceptance tests were written up in accordance to the product backlog items and the number of
+            features we were required to test. Detailing a list of acceptance tests allowed the team to
+            easily confirm the product was functioning correctly and ensured any tests required were not missing.
+            The image below depicts a snippet of the team's second sprint testing. Prerequisite steps are listed with
+            the related acceptance criteria, and the result of the test. Acceptance testing provides insight into the system's
+            features, and tests that fail are passed onto the next sprint for redesign and iterative testing.
+        </p>
+        <div>
+            <span class="img-center"><img src="images/relay/relay_acceptance_testing.png" alt="" /></span>
+        </div>
+        <br>
+        <h3 class="sub-margin" style="margin-top: 0.8em;">Final —</h3>
+        <p>
+            The images below depict some of the final deliverables of the application. 
+        </p>
+        <div class="p-small" style="margin-top: 3.5em;">
+            <span class="img-center"><img src="images/relay/relay_final_1.png" alt="" /></span>
+        </div>
+        <p class="figure"><b>Figure 1.1 —</b> Individual messaging feature</p>
+        <div class="p-small" style="margin-top: 4em;">
+            <span class="img-center"><img src="images/relay/relay_final_2.png" alt="" /></span>
+        </div>
+        <p class="figure"><b>Figure 1.2 —</b> Contacts page with option to send a private message or to delete the friend</p>
+        <div class="p-small" style="margin-top:4em;">
+            <span class="img-center"><img src="images/relay/relay_final_3.png" alt="" /></span>
+        </div>
+        <p class="figure"><b>Figure 1.3 —</b> Creating a group (Used to send messages to multiple people within the group)</p>
+        <h3 class="sub-margin">Reflection —</h3>
+        <p><b>What do you think was done well?</b></p>
+        <p class="p-content">
+            Team meetings were frequent and presentations to the client were organised and orderly. Issues and risks were quickly
+            discussed in meetings and resolved soon after. For issues or development problems that required more time, two members
+            would be assigned to ensure the feature was properly checked and tested. All tests and required material were fully
+            documented and passed to client efficiently when needed. 
+        </p>
+        <p class="p-small"><b>What could have been improved?</b></p>
+        <p class="p-content">
+            Better adjustment and outlook of the workload would allow the team to complete tasks within a more accurate timeframe.
+            Some features took alot more time to design, implement, and test, which resulted in lost time that could have been
+            utilised for the development of other features. Consequently, features that were planned for one sprint, would be pushed
+            into the next sprint due.
+        </p>
+        <p class="p-small"><b>What would I do differently if I were to approach the same problem again?</b></p>
+        <p class="p-content">
+            I would ensure more time would be put to planning the timeframe in which a feature would be developed. As discussed above,
+            the team's inaccurate assigning of a timeframe put the project at risk of incompletion. However, the team was able to get
+            back on track through proper issue and risk management. 
+        </p>
+        <div class="next">
+            <a href="prostudi.html" class="main-btn">Next Project&nbsp;&nbsp;></a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer-alt">
+            <div>
+                <span>
+                    <a href="mailto:nguyena.amy@gmail.com" class="footer-link"
+                        id="contrast-colour">nguyena.amy@gmail.com</a>
+                </span>
+                <span class="footer-div">/</span>
+                <span>
+                    <a href="https://www.linkedin.com/in/amy-nguyen-6a862119b/" class="footer-link"
+                        target="_blank">LinkedIn</a>
+                </span>
+                <span class="footer-div">/</span>
+                <span>
+                    <a href="images/Resume.pdf" download="Amy_Nguyen_Resume" class="footer-link">Resume</a>
+                </span>
+            </div>
+            <p>&#169; 2022 Amy Nguyen</p>
+        </footer>
+        <a id="go-to-top" href="#">&#8593;</a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/go-to-top.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>

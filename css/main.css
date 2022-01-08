@@ -38,12 +38,18 @@ h3 {
 
 a, ol, ul, li {
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    line-height: 28px;
+}
+
+li {
+    font-size: 17px;
 }
 
 p {
 	margin-top: 1em;
-	font-size: 16px;
+	font-size: 17px;
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    line-height: 28px;
 }
 
 .p-sub {
@@ -59,6 +65,7 @@ p {
 
 .p-content {
 	margin-top: -0.5em;
+    line-height: 28px;
 }
 
 .p-header {
@@ -206,7 +213,7 @@ footer {
 
 .tag {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 17px;
     color: #6d6d6d9d;
 }
 
