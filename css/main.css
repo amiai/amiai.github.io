@@ -32,6 +32,10 @@ h3 {
     line-height: 1.4em;
 }
 
+.col {
+    /* background-color: #004CE0; */
+}
+
 #contrast-colour {
     color: #004CE0;
 }
@@ -85,11 +89,25 @@ p {
 	text-align: center;
 }
 
+.hdr-sml {
+    margin: 1em 0 3em 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
 header {
 	/* background-color: #d1dedfc2; */
 	margin-top: 4em;
 	padding: 12em;
 }
+
+#center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 @media screen and (max-width: 1374px) {
 	header {
@@ -520,6 +538,11 @@ nav span {
     width: auto;
 }
 
+.img-md {
+    height: 300px;
+    width: auto;
+}
+
 @media screen and (max-width: 800px) {
     .signature {
         height: 200px;
@@ -607,7 +630,7 @@ nav span {
 	display: inline-block;
 	font-weight: 500;
 	height: 2.7em;
-	line-height: 2.3em;
+	line-height: 2.7em;
 	min-width: 5em;
 	margin-top: 0.5em;
 	margin: 0 0.3em 0.5em 0;
