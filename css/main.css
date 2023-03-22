@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:ital,wght@1,200&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Code+Pro:wght@500&display=swap');
 html, body {
 	margin: 0;
 	text-align: left;
-	color: #000000;
+	color: #202020;
 }
 
 h1, h2, h3 {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
 	line-height: 1.85;
 	margin: 0 0 0.7em 0;
 	letter-spacing: -0.025em;
@@ -37,11 +35,11 @@ h3 {
 }
 
 #contrast-colour {
-    color: #004CE0;
+    color: #273C9F;
 }
 
 a, ol, ul, li {
-	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	font-family: 'Inter', 'Source Sans Pro', Helvetica, sans-serif;
     line-height: 28px;
 }
 
@@ -52,18 +50,18 @@ li {
 p {
 	margin-top: 1em;
 	font-size: 17px;
-	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	font-family: 'Inter', 'Source Sans Pro', Helvetica, sans-serif;
     line-height: 28px;
 }
 
 .p-sub {
 	margin-top: -1.3em;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .p-sub-right {
 	margin-top: -1.3em;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: right;
 }
 
@@ -93,7 +91,7 @@ p {
     margin: 1em 0 8.5em 0;
     font-size: 18px;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
 }
 
@@ -189,7 +187,7 @@ header {
 
 footer {
 	/* background-color: #b6e4c2c2; */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 	text-align: left;
 	position: relative;
 	bottom: 0;
@@ -208,12 +206,12 @@ footer {
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
-    color: #000000;
+    color: #202020;
 }
 
 .footer-link:hover {
     transition: 0.3s ease-in;
-    color: #004CE0;
+    color: #273C9F;
 }
 
 .footer-div {
@@ -375,7 +373,7 @@ footer {
 }
 
 .current-page {
-	color: #004CE0;
+	color: #273C9F;
 }
 
 /* Nav */
@@ -414,8 +412,8 @@ nav li a {
 	display: block;
 	font-size: 18px;
     font-weight: 600;
-	font-family: 'Poppins', sans-serif;
-	color: #000000;
+	font-family: 'Inter', sans-serif;
+	color: #202020;
 	text-align: center;
 	padding: 14px 26px;
 	line-height: 1em;
@@ -424,7 +422,7 @@ nav li a {
 }
 
 nav li a:hover {
-	color: #004CE0;
+	color: #273C9F;
 	transition: 0.2s ease-in;
 }
 
@@ -437,7 +435,7 @@ nav span {
 
 .brand {
     font-size: 26px;
-    color: #004CE0;
+    color: #273C9F;
 }
 
 .menu-icon {
@@ -676,8 +674,8 @@ nav span {
 
 .main-btn {
 	border-radius: 0px;
-	border: 1.8px solid #000000;
-	color: #000000;
+	border: 1.8px solid #202020;
+	color: #202020;
 	cursor: pointer;
 	display: inline-block;
 	font-weight: 500;
@@ -699,15 +697,15 @@ nav span {
 }
 
 .main-btn:hover {
-    color: #000000;
+    color: #202020;
 	-webkit-transform: scale(1.05);
 	transform: scale(1.05);
 }
 
 .btn-small {
 	border-radius: 0px;
-	border: 1.8px solid #000000;
-	color: #000000;
+	border: 1.8px solid #202020;
+	color: #202020;
 	cursor: pointer;
 	display: inline-block;
 	font-weight: 500;
@@ -767,7 +765,7 @@ nav span {
 
 #go-to-top {
 	text-decoration: none;
-	color: #000000;
+	color: #202020;
 	font-size: 3em;
 	font-weight: 300;
 	position: fixed;
