@@ -1,0 +1,411 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="icon" href="images/misc/favicon.png">
+    <title>Myagi Design System | Amy Nguyen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="desktop-view">
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="brand">AMY.N</a></li>
+                <div id="nav-right">
+                    <li><a href="index.html">WORK</a></li>
+                    <li><a href="sundry.html">SUNDRY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </div>
+            </ul>
+
+            <!-- Right Nav -->
+            <!-- <div class="menu-icon" onclick="toggleMenu()">
+                <div onclick="openMenu()">
+                    <div onclick="menu(this)">
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                    </div>
+                </div>
+                <ul class="menu-main">
+                    <li><a href="index.html">work</a></li>
+                    <li><a href="play.html">play</a></li>
+                    <li><a href="about.html" class="current-page">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <ul class="menu-content" id="menu">
+                    <li><a href="index.html">work</a></li>
+                    <li><a href="play.html">play</a></li>
+                    <li><a href="about.html" class="current-page">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div> -->
+        </nav>
+
+        <!-- Content Preview -->
+        <div class="align-preview">
+            <span class="img-preview"><img src="images/myagi_ds/DS cover.png" alt="" /></span>
+        </div>
+        
+
+        <!-- Main Content -->
+        <div class="container-content">
+            <h2 style="text-align: center;">Building a Design System</h2>
+            
+            <!-- Project Overview -->
+            <h4>Project Overview</h4>
+            <p class="p-hdr" style="margin-top: -1em;">Team</p>
+            <p class="p-content">
+                Scrum team consisted of 3 software engineers, 1 QA engineer, 1 designer, and 1 product manager. 
+                Design team consisted of 3 designers, where I led the Design Systems project as the designer assigned to the scrum team.
+            </p>
+            <p class="p-hdr">Role</p>
+            <p class="p-content">
+                As the lead designer for this project, I was responsible for the creation of the Myagi Design System and also to collaborate closely with 
+                engineers in order to help build Storybook where code components were stored.
+            </p>
+            <p class="p-hdr">Tools</p>
+            <p class="p-content">
+            <ul>
+                <li>Figma</li>
+                <li>Miro</li>
+                <li>Confluence</li>
+                <li>Jira</li>
+                <li>Storybook</li>
+                <li>GitHub</li>
+            </ul>
+            </p>
+
+            <!-- Problem Statement -->
+            <h4 class="sub-margin">Problem Statement</h4>
+            <p>
+                The accumulation of technical and design-debt, and the lack of documentation for the legacy product has resulted in inconsistencies across 
+                the product and the teams' shared language.
+            </p>
+
+            <!-- Objectives + Goals -->
+            <h4 class="sub-margin">Objectives + Goals</h4>
+            <p>
+                Our primary objective for this project was to build an ongoing design system for a multitude of reasons. There are many benefits to having a 
+                design system. In particular, due to tech and design-debt, the team believed that it would advantageous as it would enable more efficient 
+                team collaboration, including cross-functional collaboration where having a shared vocabulary would allow two different departments to 
+                communicate expectations and objectives clearly.
+            </p>
+            <p class="p-hdr">Primary Goal</p>
+            <ul>
+                <li>To create a 1:1 replication between code and design components</li>
+            </ul>
+
+            <p class="p-hdr">Secondary Goals</p>
+            <ul>
+                <li>To streamline the team and company's shared vocabulary</li>
+                <li>To ensure alignment between Design and Engineering teams (i.e. Naming Conventions, Components)</li>
+            </ul>
+
+            <p class="p-hdr">Deliverables</p>
+            <ol>
+                <li>Figma file that contains all components (Designers and engineers can access)</li>
+                <li>Storybook repository</li>
+            </ol>
+
+            <!-- Design Approach -->
+            <h4 class="sub-margin">Design Approach</h4>
+            <p>
+                Our team took on a more lean design approach due to limited time and resources. This involved utilising Tailwind's colour tokens, and reducing 
+                time spent on determining specific pixel and sizing guidelines.
+            </p>
+            <p>
+                As this project was occurring during the same time as the Frontend Refactor project, we would audit components for each page being refactored. 
+                After auditing, we would redesign components based on technical constraints and user research (See Frontend Refactor project for more information). 
+                Components would be designed and added into our Figma library, and once that was complete, engineers would add that into Storybook. Our audits 
+                took on a holistic approach as these components would be used in multiple pages, and not just a singular one. For example, we wanted to ensure 
+                that our <i>'Calendar'</i> component could be used and easily accessible on more than just one page. 
+            </p>
+            <p>
+                A large part of starting this Design System was to look at the current Myagi app's components and work towards making redesigning and documenting it. 
+                Hence, the diagram below depicts the design approach for this particular part of the project.
+            </p>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/Design Approach.png" alt="" /></span>
+            </div>
+
+            <!-- Product Users -->
+            <h4 class="sub-margin">Product Users</h4>
+            <p>
+                Our primary target users for this design system were designers and engineers as our main objective was to create more efficient team collaboration 
+                and workflow between these two teams. However, the design system would also benefit other users which we have deemed our secondary target users.
+            </p>
+            <p class="p-hdr">Primary Users</p>
+            <ul>
+                <li>Design Team</li>
+                <li>Engineering Team</li>
+            </ul>
+
+            <p class="p-hdr">Secondary Users</p>
+            <ul>
+                <li>Sales and Marketing Team</li>
+                <li>Product Team</li>
+                <li>Support Team</li>
+                <li>Customers</li>
+                <li>The Business (As a whole)</li>
+            </ul>
+
+            <!-- Brand Guidelines -->
+            <h4 class="sub-margin">Brand Guidelines</h4>
+            <p>
+                As a part of our objective to create an ongoing design system, it was critical that we documented information regarding not only our components and naming 
+                conventions, but also our brand guidelines. As our brand guidelines had already been determined prior to this project, it required collaboration with Sales 
+                and Marketing. In particular, the Marketing team was very knowledgeable about the Myagi's brand guidelines due to their frequent usage of it. As a result of 
+                collaboration with these teams, we were able to gauge guidelines ranging from tone of voice, colours, logos, and also infographics. Cross-functional 
+                collaboration was critical to this project as the design system's intended users include the entire company and the different departments within it.
+            </p>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/Myagi Brand Colours.png" alt="" /></span>
+            </div>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/Brand Guidelines.png" alt="" /></span>
+            </div>
+
+            <!-- Ideation -->
+            <h4 class="sub-margin">Ideation</h4>
+            <div class="alert alert-light" role="alert" style="margin: 1em 0 0 0;">
+                For the purpose of presenting a summary of this project, only the <i>'Calendar'</i> component will be explored in this section of the case study.
+            </div>
+            <p>
+                One of the components that needed redesign was the <i>'Calendar'</i> component as it was no longer consistent with the new frontend. In the screenshot below, 
+                the circled part depicts preselected options that users are able to select. One of the requirements for the new calendar component was to include this particular feature.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/FE1 Calendar.png" alt="" /></span>
+            </div>
+            <br>
+            <p>
+                During ideation, we ensured that the preselected ranges were included in our designs. In addition to that, the calendar component's overall UI was updated to match 
+                other existing components and the new frontend.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/Calendar Ideation 1.png" alt="" /></span>
+            </div>
+            <br>
+            <p>
+                In addition to the ideated designs of the desktop calendar component, designs for the mobile view were also explored as some of our users prefer 
+                to access and use Myagi via mobile due to convenience. 
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/Calendar Ideation 2 Mobile.png" alt="" style="width: 50%;"/></span>
+            </div>
+            <br>
+            <p class="p-hdr">Outcome</p>
+            <p>
+                As previewed via Storybook, the calendar component can be interacted with as seen below. We had multiple variations of the calendar component in our Storybook. 
+                The first one below depicts a dropdown where users can click and open the calendar from. Whereas the second is an example of what the preselected range looks and behaves like.
+            </p>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/storybook/Calendar-Select.gif" alt="" /></span>
+            </div>
+            <p class="figure">Figure 1.1 — Calendar Select Component</p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/storybook/Calendar-Range.gif" alt="" /></span>
+            </div>
+            <p class="figure" style="margin: 0;">Figure 1.2 — Preselected Calendar Range Component</p>
+
+            <!-- Storybook + Figma Library -->
+            <h4 class="sub-margin">Storybook + Figma Library</h4>
+            <p class="p-hdr">Storybook</p>
+            <div class="alert alert-light" role="alert" style="margin: 1em 0 0 0;">
+                <i>Storybook is a development environment tool that allows engineers to document, create, and test UI components.</i>
+            </div>
+            <p>
+                After components have been handed over to engineers and built, the components are then added into Storybook. Storybook is mainly used for the Engineering team's reference on the 
+                components, however, it was also used within the Design team to see how certain components would look and feel when a user interacts with it.
+            </p>
+            <p>
+                As seen in the examples below, Storybook allows the team to interact with the component by adjusting details such as:
+            </p>
+            <ul>
+                <li>Labels</li>
+                <li>Variants</li>
+                <li>Placeholders</li>
+                <li>Size</li>
+                <li>Toggling Full Width</li>
+                <li>Toggling Disabled</li>
+            </ul>
+            <br>
+            <p>
+                It was critical that information on components stored in Storybook were a 1:1 replication of the components in Figma. This would ensure that both the Design and Engineering 
+                team's understanding and knowledge of components were aligned.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/Multiselect.png" alt="" style="width: 80%;"/></span>
+            </div>
+            <br>
+            <p class="p-hdr">Advantages of Storybook</p>
+            <ul>
+                <li>Displays components available</li>
+                <li>Able to view components on different screen sizes</li>
+                <li>Quick access during development</li>
+                <li>Can store usage references and documentation</li>
+                <li>Interactive
+                    <ul>
+                        <li>Engineers and designers are able to see how a component will behave when there is user interaction</li>
+                    </ul>
+                </li>
+                <li>Can test components
+                    <ul>
+                        <li>Accessibility + colour filter features</li>
+                    </ul>
+                </li>
+                <li>Code references allow for more efficient development when implementing components</li>
+                <li>Designers can easily access Storybook to view how components works
+                    <ul>
+                        <li>Allows for review and comparison to mockups</li>
+                        <li>Designers can stay updated with UI components on development side</li>
+                        <li>Less follow-up questions and waiting for message updates from engineers</li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/Button Storybook.png" alt="" style="width: 50%;"/></span>
+            </div>
+            <br>
+            <p class="p-hdr">Figma Library</p>
+            <p>
+                One of our objectives for this project was to create a 1:1 replication between code and design components, as discussed above. For every component that was added into 
+                Storybook, there must be an identical component added into the Myagi's Figma library; And vice versa. Below is a screenshot of the <i>'Badge'</i> component in 
+                Figma, and also a GIF of that same component in Storybook.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/Badge.png" alt="" style="width: 80%;"/></span>
+            </div>
+            <p class="figure">Figure 2.1 — Badge Component (Figma Library)</p>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/storybook/Badge.gif" alt="" style="width: 70%;"/></span>
+            </div>
+            <p class="figure" style="margin: 0;">Figure 2.2 — Badge Component (Storybook)</p>
+
+            <!-- Outcome -->
+            <h4 class="sub-margin">Outcome</h4>
+            <p class="p-hdr">Success Metrics</p>
+            <ul>
+                <li>The design system is being used by designers</li>
+                <li>The design system is being used by engineers</li>
+                <li>Designers cut down time to make changes and updates to designs and handover</li>
+                <li>Consistent interface implemented on the new frontend</li>
+                <li>A 1:1 replication between code and design components</li>
+            </ul>
+            <p>
+                While the team did not have quantitative success metrics, we discussed what success would look like for this project prior to its initiation. The success metrics listed above were achieved. However, as a design system is 
+                always scaling, it would eventually require the team to implement a more tangible and quantitative form of measuring success. The team took on a more lean approach due to limited time and resources.
+            </p>
+            <br>
+            <p class="p-hdr">Final</p>
+            <p>
+                The main objective for this project was achieved, which was to create a 1:1 replication between code and design components. This manifested in the form of a Figma file containing all our components, and a Storybook repository. 
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/DS cover.png" alt="" /></span>
+            </div>
+            <p class="figure">Figure 3.1 — Myagi Library Components</p>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/storybook/Button.gif" alt="" /></span>
+            </div>
+            <p class="figure">Figure 3.2 — Button Component</p>
+            <div>
+                <span class="img-center"><img src="images/myagi_ds/storybook/Multiselect-Tags.gif" alt="" /></span>
+            </div>
+            <p class="figure" style="margin: 0;">Figure 3.3 — Multiselect Component</p>
+            
+            <!-- Reflection -->
+            <h4 class="sub-margin">Reflection</h4>
+            <p class="p-bold">What do you think was done well?</p>
+            <p class="p-content">
+                After building a 1:1 replication between Storybook and Figma components, we were able to handover designs more smoothly due to both the Design and Engineering team's shared vocabulary. Utilising Storybook in this way enabled us 
+                to work and collaborate closer and more efficiently with engineers. Having a shared vocabulary also allowed for more seamless discussions during meetings. For example, when deciding the most ideal component for a particular page, 
+                it was much easier to discuss as we all had the same understanding of what a radio button or a toggle would look like. Not only was this beneficial for Design and Engineering teams, but the design system was used by the Product 
+                team as well. This created unified collaboration between Product, Design, and Engineering teams as a whole.
+            </p>
+            <br>
+            <p class="p-bold">What could have been improved?</p>
+            <p class="p-content">
+                Due to limited time and resources, it was challenging to build a more expansive design system. There are many aspects that tie into a design system, however, the team was unable to develop it further. Only a small portion of the 
+                design system was developed, including naming conventions, brand guidelines, component library, colour guidelines, and typography guidelines.
+            </p>
+            <br>
+            <p class="p-bold">What would I do differently if I were to approach the same problem again?</p>
+            <p class="p-content">
+                If I were to approach this project again, I would ensure that the project to build and develop an ongoing design system has a higher priority. As the design system's primary target users were designers and engineers, 
+                and not customers, it was less of a priority compared to customer-facing projects. A design system has multiple advantages for the business, so I believe it would beneficial to gain more support for this project from 
+                the company. This could be done through a presentation which details reasons as to why this project would be effective and favourable for the business, and not just for the Design and Engineering teams.
+            </p>
+            
+            <!-- Next Case Study -->
+            <div class="next">
+                <a href="myagi_FE2.html" class="main-btn">Next Case Study — Myagi Frontend Refactor&nbsp;&nbsp;></a>
+            </div>
+
+            <!-- Footer -->
+            <div style="margin-top: 12em;">
+                <div>
+                    <span>
+                        <a href="mailto:nguyena.amy@gmail.com" class="footer-link"
+                            id="contrast-colour">nguyena.amy@gmail.com</a>
+                    </span>
+                    <span class="footer-div">/</span>
+                    <span>
+                        <a href="https://www.linkedin.com/in/amy-nguyen-6a862119b/" class="footer-link"
+                            target="_blank">LinkedIn</a>
+                    </span>
+                    <span class="footer-div">/</span>
+                    <span>
+                        <a href="images/Resume.pdf" download="Amy_Nguyen_Resume"
+                            class="footer-link">Resume</a>
+                    </span>
+                </div>
+                <p style="font-size: 14px;">Designed & hand-coded with &#9825;</p>
+                <p style="margin-top: -1.5em; font-size: 14px;">&#169; 2024 Amy Nguyen</p>
+            </div>
+
+            <a id="go-to-top" href="#">&#8593;</a>
+        </div>
+
+        <!-- Scripts -->
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/go-to-top.js"></script>
+        <script src="js/menu.js"></script>
+
+    </div>
+
+    <!-- Mobile/Small Screen View -->
+    <div class="mobile-view">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <header>
+                        <h1 class="name" style="text-align: center;">UH OH!</h1>
+                        <p class="alert-mobile">PLEASE VISIT ME ON A LARGER SCREEN</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

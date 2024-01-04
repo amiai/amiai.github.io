@@ -2,177 +2,193 @@
 <html>
 
 <head>
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/misc/favicon.png">
     <title>Amy Nguyen</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="d-flex justify-content-center">
-            <header>
-                
-                <h1 style="margin-bottom: 0px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8%" height="auto" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                    </svg>
-                    Hello! I'm Amy —
-                </h1>
-                <div>
-                    <h3 class="h2-md">
-                        a <span id="contrast-colour" style="font-weight: 700;"><i><u>PRODUCT DESIGNER</u></i></span> with a background in <code id="contrast-colour">&lt;front-end development/&gt;</code> and a passion for crafting user-centered products
-                    </h3>
-                </div>
-            </header>
-        </div>
-
-        <!-- Right Nav -->
-        <nav class="menu-icon" id="nav-right" onclick="toggleMenu()">
-            <div onclick="openMenu()">
-                <div onclick="menu(this)">
-                    <span class="line-1"></span>
-                    <span class="line-2"></span>
-                    <span class="line-3"></span>
-                </div>
-            </div>
-            <ul class="menu-main">
-                <li><a href="index.html" class="current-page">work</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-            <ul class="menu-content" id="menu">
-                <li><a href="index.html" class="current-page">work</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="images/Resume.pdf" download="Amy_Nguyen_Resume">resume</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- Left Nav -->
-        <nav id="nav-left">
+    <div class="desktop-view">
+        <!-- Navigation Bar -->
+        <nav>
             <ul>
-                <li><a href="index.html" class="brand">Amy Nguyen</a></li>
+                <li><a href="index.html" class="brand">AMY.N</a></li>
+                <div id="nav-right">
+                    <li><a href="index.html" class="current-page">WORK</a></li>
+                    <li><a href="sundry.html">SUNDRY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </div>
             </ul>
         </nav>
 
-        <!-- Main Content -->
-        <div class="row">
-            <div class="col">
+        <!-- <nav class="menu-icon" id="nav-right" onclick="toggleMenu()">
+                <div onclick="openMenu()">
+                    <div onclick="menu(this)">
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                    </div>
+                </div>
+                <ul class="menu-main">
+                    <li><a href="index.html" class="current-page">work</a></li>
+                    <li><a href="play.html">play</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <ul class="menu-content" id="menu">
+                    <li><a href="index.html" class="current-page">work</a></li>
+                    <li><a href="play.html">play</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+
+            <nav id="nav-left">
+                <ul>
+                    <li><a href="index.html" class="brand"><i>AMY.N</i></a></li>
+                </ul>
+            </nav> -->
+
+        <!-- Content Container -->
+        <div class="container-fluid">
+            <!-- <div class="d-flex justify-content-center">
+                <header>
+                    
+                    <h1 style="margin-bottom: 0px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8%" height="auto" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>
+                        Hello! I'm <a class="text-hover" style="color: #202020;">Amy</a> —
+                    </h1>
+                    <div>
+                        <h4 class="h2-md">
+                            a <span id="contrast-colour" style="font-weight: 700;"><i><u>PRODUCT DESIGNER</u></i></span> with a background in <code id="contrast-colour">&lt;front-end development/&gt;</code> and a passion for crafting user-centered products
+                        </h4>
+                    </div>
+                </header>
+            </div> -->
+
+            <!-- Main Content -->
+            <div class="row">
                 <div class="d-flex justify-content-center">
-                    <div class="image">
-                        <a href="relay.html"><img src="images/relay/relay_cover.png" alt="Relay"
+                    <header>
+                        <div>
+                            <h5 class="tag" id="mt-1">Product Design</h5>
+                            <h5 class="tag" id="mt-1">UI/UX Design</h5>
+                        </div>
+                        <h1 class="name" style="margin-bottom: 0px;">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="8%" height="auto" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                            </svg> -->
+                            AMY NGUYEN
+                        </h1>
+                        <div>
+                            <h4 class="h2-md">
+                                a <span id="contrast-colour" style="font-weight: 700;"><i><u>PRODUCT DESIGNER</u></i></span> with a background in <code id="contrast-colour">&lt;front-end development/&gt;</code> and a passion for crafting user-centered products
+                            </h4>
+                        </div>
+                        
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <div class="image">
+                            <a href="myagi_FE2.html"><img src="images/myagi_FE2/FE2 cover.png" alt="Myagi FE2"
+                                    id="img-hover"></a>
+                            <div>
+                                <h5 class="tag" id="mt-1">Myagi | 2022-2023</h5>
+                                <h3>Myagi Frontend Refactor</h3>
+                                <p class="p-sub">Refactoring and redesigning Myagi's frontend to reduce tech & design-debt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="margin-top: 7em;">
+                    <div class="d-flex justify-content-center">
+                        <div class="image">
+                            <a href="myagi_home.html"><img src="images/myagi_home/HOME cover.png" alt="Myagi HOME"
+                                    id="img-hover"></a>
+                            <div>
+                                <h5 class="tag" id="mt-1">Myagi | 2023</h5>
+                                <h3>Redesigning Myagi Home</h3>
+                                <p class="p-sub">Redesigning and optimising Myagi's Home page for frequenting users.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="margin: 7em 0 5em 0;">
+                    <div class="d-flex justify-content-center">
+                        <div class="image">
+                            <a href="myagi_ds.html"><img src="images/myagi_ds/DS cover.png" alt="Myagi DS"
                                 id="img-hover"></a>
-                        <div>
-                            <h5 class="tag" id="mt-1">2021 | DEVELOPMENT</h5>
-                            <h3>Text Messaging App</h3>
-                            <p class="p-sub">Designing and developing a secure <br>text messaging application.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col" style="margin-top: 7em;">
-                <div class="d-flex justify-content-center">
-                    <div class="image">
-                        <a href="ezikitchen.html"><img src="images/ezikitchen/ezikitchen_index.png" alt="EziKitchen"
-                                id="img-hover"></a>
-                        <div>
-                            <h5 class="tag" id="mt-1">2021 | DESIGN</h5>
-                            <h3>EziKitchen Landing Page</h3>
-                            <p class="p-sub">Designing a suitable landing page for EziKitchen, <br>a cloud kitchen
-                                platform.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col" style="margin-top: 7em;">
-                <div class="d-flex justify-content-center">
-                    <div class="image">
-                        <a href="booking_sys.html"><img src="images/booking_sys/booking_system_cover.png"
-                                alt="BookingSys" id="img-hover"></a>
-                        <div>
-                            <h5 class="tag" id="mt-1">2020 | DEVELOPMENT</h5>
-                            <h3>Booking System API</h3>
-                            <p class="p-sub">How can we design and integrate a user-friendly <br>booking system API?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col" style="margin-top: 7em;">
-                <div class="d-flex justify-content-center">
-                    <div class="image">
-                        <a href="mokka.html"><img src="images/mokka/Final.png" alt="Mokka" id="img-hover"></a>
-                        <div>
-                            <h5 class="tag" id="mt-1">2020 | DESIGN</h5>
-                            <h3>Furniture E-commerce App</h3>
-                            <p class="p-sub">How can we promote the brand's aesthetic <br>through UI/UX Design?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col" style="margin: 7em 0 5em 0;">
-                <div class="d-flex justify-content-center">
-                    <div class="image">
-                        <a href="prostudi.html"><img src="images/prostudi/prostudi_cover.png" alt="ProStudi"
-                                id="img-hover"></a>
-                        <div>
-                            <h5 class="tag" id="mt-1">2019 | DESIGN</h5>
-                            <h3>Study Planner App</h3>
-                            <p class="p-sub">How can we improve student productivity, <br>organisation and time
-                                management?
-                            </p>
-                            
-                            <!-- Footer -->
-                            <div style="margin-top: 12em;">
-                                <div>
-                                    <span>
-                                        <a href="mailto:nguyena.amy@gmail.com" class="footer-link"
-                                            id="contrast-colour">nguyena.amy@gmail.com</a>
-                                    </span>
-                                    <span class="footer-div">/</span>
-                                    <span>
-                                        <a href="https://www.linkedin.com/in/amy-nguyen-6a862119b/" class="footer-link"
-                                            target="_blank">LinkedIn</a>
-                                    </span>
-                                    <span class="footer-div">/</span>
-                                    <span>
-                                        <a href="images/Resume.pdf" download="Amy_Nguyen_Resume"
-                                            class="footer-link">Resume</a>
-                                    </span>
+                            <div>
+                                <h5 class="tag" id="mt-1">Myagi | 2022-2023</h5>
+                                <h3>Building a Design System</h3>
+                                <p class="p-sub">Developing an ongoing design system for the Myagi product.</p>
+                                
+                                <!-- Footer -->
+                                <div style="margin-top: 12em;">
+                                    <div>
+                                        <span>
+                                            <a href="mailto:nguyena.amy@gmail.com" class="footer-link"
+                                                id="contrast-colour">nguyena.amy@gmail.com</a>
+                                        </span>
+                                        <span class="footer-div">/</span>
+                                        <span>
+                                            <a href="https://www.linkedin.com/in/amy-nguyen-6a862119b/" class="footer-link"
+                                                target="_blank">LinkedIn</a>
+                                        </span>
+                                        <span class="footer-div">/</span>
+                                        <span>
+                                            <a href="images/Resume.pdf" download="Amy_Nguyen_Resume"
+                                                class="footer-link">Resume</a>
+                                        </span>
+                                    </div>
+                                    <p style="font-size: 14px;">Designed & hand-coded with &#9825;</p>
+                                    <p style="margin-top: -1.5em; font-size: 14px;">&#169; 2024 Amy Nguyen</p>
                                 </div>
-                                <p>&#169; 2022 Amy Nguyen</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Go to top button -->
+        <a id="go-to-top" href="#">&#8593;</a>
+        </div>
+
+        <!-- Scripts -->
+        <script src="js/go-to-top.js"></script>
+        <script src="js/menu.js"></script>
+
     </div>
 
-    <!-- Go to top button -->
-    <a id="go-to-top" href="#">&#8593;</a>
+    <!-- Mobile/Small Screen View -->
+    <div class="mobile-view">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <header>
+                        <h1 class="name" style="text-align: center;">UH OH!</h1>
+                        <p class="alert-mobile">PLEASE VISIT ME ON A LARGER SCREEN</p>
+                    </header>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Scripts -->
-    <script src="js/go-to-top.js"></script>
-    <script src="js/menu.js"></script>
-
 </body>
 
 </html>

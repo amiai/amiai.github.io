@@ -1,0 +1,395 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="icon" href="images/misc/favicon.png">
+    <title>Myagi Frontend Refactor | Amy Nguyen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="desktop-view">
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="brand">AMY.N</a></li>
+                <div id="nav-right">
+                    <li><a href="index.html">WORK</a></li>
+                    <li><a href="sundry.html">SUNDRY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </div>
+            </ul>
+
+            <!-- Right Nav -->
+            <!-- <div class="menu-icon" onclick="toggleMenu()">
+                <div onclick="openMenu()">
+                    <div onclick="menu(this)">
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                    </div>
+                </div>
+                <ul class="menu-main">
+                    <li><a href="index.html">work</a></li>
+                    <li><a href="play.html">play</a></li>
+                    <li><a href="about.html" class="current-page">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <ul class="menu-content" id="menu">
+                    <li><a href="index.html">work</a></li>
+                    <li><a href="play.html">play</a></li>
+                    <li><a href="about.html" class="current-page">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div> -->
+        </nav>
+
+        <!-- Content Preview -->
+        <div class="align-preview">
+            <span class="img-preview"><img src="images/myagi_FE2/FE2 cover.png" alt="" /></span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container-content">
+            <h2 style="text-align: center;">Myagi Frontend Refactor</h2>
+
+            <!-- Project Overview -->
+            <h4>Project Overview</h4>
+            <p class="p-hdr" style="margin-top: -1em;">Team</p>
+            <p class="p-content">
+                Scrum team consisted of 3 software engineers, 1 QA engineer, 1 designer, and 1 product manager. 
+                Design team consisted of 3 designers, where I led the Frontend Refactor project as the designer assigned to the scrum team.
+            </p>
+            <p class="p-hdr">Role</p>
+            <p class="p-content">
+                As the lead designer for this project, I was responsible for redesigning the Myagi app. This involved conducting user research 
+                (interviews, surveys), ideation of UI designs, and handover of designs to engineers. I was also responsible for facilitating feedback 
+                workshops while articulating design decisions from a technical and business standpoint to my scrum team and to stakeholders.
+            </p>
+            <p class="p-hdr">Tools</p>
+            <p class="p-content">
+            <ul>
+                <li>Figma</li>
+                <li>Miro</li>
+                <li>Confluence</li>
+                <li>Jira</li>
+                <li>Storybook</li>
+                <li>Metabase</li>
+                <li>Mouseflow</li>
+                <li>Intercom</li>
+                <li>Productboard</li>
+                <li>Airtable</li>
+                <li>GitHub</li>
+            </ul>
+            </p>
+
+            <!-- What is Myagi? -->
+            <h4 class="sub-margin">What is Myagi?</h4>
+            <p>
+                Myagi is a Retail Sales Enablement platform that lets brand and retailers deliver the right product knowledge to retail sales 
+                associates at scale. Through Myagi, both suppliers and their reseller partners can optimize sell-through by improving what we call 
+                the Knowledge Supply Chain—the path information takes to get from its start to end, across multiple companies and teams and people.
+                If you've ever had issues with important knowledge not getting to the right place, not getting there in time, not being understood, 
+                or easily being forgotten, you probably have a broken Knowledge Supply Chain.
+            </p>
+
+            <!-- Problem Statement -->
+            <h4 class="sub-margin">Problem Statement</h4>
+            <p>
+                The Myagi Product has grown to a stage where customers are requesting a variety of features that we are unable to deliver efficiently 
+                due to the accumulation of technical and design-debt within the product.
+            </p>
+
+            <!-- Objectives + Goals -->
+            <h4 class="sub-margin">Objectives + Goals</h4>
+            <p>
+                Our primary objective for this project was to refactor and redesign the Myagi app's frontend to reduce tech and design-debt. From a design perspective, 
+                our goal was to improve the product's overall UX and UI. The Myagi product features 6 key directories accessible via the navigation bar:
+            </p>
+            <ul>
+                <li>Home</li>
+                <li>Learning</li>
+                <li>Content</li>
+                <li>People</li>
+                <li>People</li>
+                <li>Analytics</li>
+                <li>Network</li>
+            </ul>
+            <p>The frontend refactor project involved the refactor and redesign of the sections listed above, which are also inclusive of the individual pages within each section.</p>
+            <div style="margin-top: 2.5em;">
+                <span class="img-center"><img src="images/myagi_FE2/Navbar.png" alt="" /></span>
+            </div>
+            <p class="figure">Figure 1 — Each section that required refactoring, corresponds to the sections displayed in the navigation bar</p>
+
+            <!-- Design Process -->
+            <div class="alert alert-light" role="alert" style="margin: 4em 0 -4em 0;">
+                <b>Disclaimer: </b>The examples shown below are just one section of the Myagi product — <i>'Content'</i> section. Multiple sections and pages were refactored; However, for the purpose 
+                of presenting a summary of this project, other refactored sections will not be included.
+            </div>
+            <h4 class="sub-margin">Design Process</h4>
+            <p>Throughout our design projects, our team embraced the Double Diamond process, a framework that guided our approach from problem identification to solution implementation.</p>
+            <p>The process consists of four key phases:</p>
+            <ol>
+                <li>Discover</li>
+                <li>Define</li>
+                <li>Develop / Define</li>
+                <li>Deliver</li>
+            </ol>
+            <br>
+            <p>
+                During the <i>'Discover'</i> phase, we delved into extensive research, engaging in user interviews, market analysis, and comprehensive data collection to gain a deep understanding of the 
+                problem at hand. Moving into the <i>'Define'</i> phase, we distilled and analysed our research, identifying core issues and defining the problem space. With a clear definition in hand, 
+                we shifted into the <i>'Develop'</i> phase, generating a wide array of ideas and solutions. This involved brainstorming, prototyping, and testing concepts to explore various possibilities. 
+                Finally, in the <i>'Deliver'</i> phase, we honed in on the best solutions, refining and implementing them to create the final design before handing over to engineers.
+            </p>
+            <p>
+                By traversing through divergent and convergent thinking in each phase of the Double Diamond, we ensured a systematic and creative approach, leading to well-informed and user-centred design solutions.
+            </p>
+            <div style="margin: 5em 0 5em 0;">
+                <span class="img-center"><img src="images/myagi_FE2/Double Diamond Process.png" alt="" style="width: 80%"/></span>
+            </div>
+            <p>
+                The diagram below depicts a simplified view of the Double Diamond process. An important and significant part of this process is iterating on our designs during the <i>'Develop'</i> phase. As mentioned, 
+                this process involves and focuses on generating a multitude of ideas, which is why it is crucial for us to constantly iterate on designs until we reach a stage where it addressed the problems 
+                that we were trying to solve for.
+            </p>
+            <div>
+                <span class="img-center"><img src="images/myagi_FE2/Double Diamond Simplified.png" alt=""/></span>
+            </div>
+
+            <!-- Design Approach -->
+            <h4 class="sub-margin">Design Approach</h4>
+            <p>
+                Our design approach varied depending on the context of the page, as each page had its own usability issues which required problem solving with different sets of solutions. However, our design approach 
+                would always consist of and begin with looking at the platform as a whole. We took on a holistic approach as the purpose of this project was to refactor and redesign the Myagi product. It was critical 
+                that we understood how a component may look and function on two different pages, and that redesigned components were consistent throughout the product.
+            </p>
+            <p>
+                Prior to the refactoring of the sections and pages, it was also important for the team to consider the learning curve that users would have to face once the refactored pages were released.
+            </p>
+            <p>
+                When broken down, our design approach is as depicted in the diagram below. For the purpose of simplifying the approach used, design approaches for each individual page have not been included as it is context dependent.
+            </p>
+            <div>
+                <span class="img-center"><img src="images/myagi_FE2/Design Approach.png" alt="" /></span>
+            </div>
+
+            <!-- Product Users -->
+            <h4 class="sub-margin">Product Users</h4>
+            <p>
+                The Myagi product has a variety of users that rely on our app for a multitude of reasons. Frequently used features within our product are quite dependant on the user type. For example, brands 
+                (marketing managers/associates) would be more focused on growing a network of connections via our product. Whereas retailers (sales associates) would be more focused on learning content that 
+                they receive from brands in order to train their staff.
+            </p>
+            <div>
+                <span class="img-center"><img src="images/myagi_FE2/Brand and Retailer.png" alt="" style="width: 70%;"/></span>
+            </div>
+            <p class="p-bold">Some examples of our users:</p>
+            <ul>
+                <li>Brands (Marketing managers/associates)</li>
+                <li>Retailers (Sales asssociates)</li>
+                <li>Account Admins</li>
+                <li>Team Managers</li>
+                <li>Area Managers</li>
+            </ul>
+            <br>
+            <p>
+                User types have different goals when interacting with the Myagi product. Retail users (Retail Admins, Sales Associates, Team Managers) want to see their performance, progress, find out which content to consume, 
+                and to see what they've completed. Brand Admins want to create content, drive engagement, and view analytics.
+            </p>
+            <div>
+                <span class="img-center"><img src="images/myagi_FE2/Product Users.png" alt="" /></span>
+            </div>
+            <p class="figure" style="margin: 0;">Figure 2 — A simplified view of how we would organise information on our user types. In the context of this example, the information in the table is in relation to how our users interact and use the <i>'Content'</i> section.</p>
+
+            <!-- User, Business, and Technical Needs -->
+            <h4 class="sub-margin">User, Business, and Technical Needs</h4>
+            <p>
+                One of the main business goals was decreasing churn rate, and to do so, the product team prioritised the refactoring project as a pathway to improving our customers' experience when interacting with our product. 
+                It was important for us to understand both user needs and business goals in order to achieve this objective. However, due to the nature of this project - Refactoring the product to reduce tech and design-debt, 
+                it was also essential to understand the technical constraints that came with this project. For example, the team had to be aware that we were unable to touch the backend, or change any significant feature behaviour 
+                as we were only focused on refactoring the frontend.
+            </p>
+            <div>
+                <span class="img-center"><img src="images/myagi_FE2/User Business Tech Needs.png" alt="" style="width: 80%;"/></span>
+            </div>
+
+            <!-- User Flows -->
+            <h4 class="sub-margin">User Flows</h4>
+            <p>
+                Our team dedicated focused efforts to create detailed user flows as a fundamental step before initiating any refactoring. By mapping out user flows, we aimed to gain a comprehensive understanding of both our product and our users. 
+                Through this process, we visualised the pathways users navigate within the product, analysing their interactions, and decision points. The user flows allowed us to comprehend the existing user journey, identify pain points, 
+                and recognise areas for potential improvement. 
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_FE2/Feedback User Flow.jpg" alt="" /></span>
+            </div>
+
+            <!-- Information Architecture -->
+            <h4 class="sub-margin">Information Architecture</h4>
+            <p>
+                It was important that we had a clear comprehension of the current information architecture to ensure that changes made will not disrupt our customers' current experience and knowledge of where expected information is located. 
+                We analysed and mapped out the product's information architecture for each section, including the pages within. This in-depth understanding provided a solid foundation for our refactoring endeavours, enabling us to strategically 
+                address specific user needs and restructure the product in a way that enhanced usability and satisfaction.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_FE2/Content_Feedback_IA.jpg" alt="" /></span>
+            </div>
+
+            <!-- Heuristic Evaluation -->
+            <h4 class="sub-margin">Heuristic Evaluation</h4>
+            <p>
+                Our team conducted heuristic evaluations and comprehensive audits of our application to delve deep into its usability and functionality. Through this process, we assessed the product against established usability principles 
+                and best practices. This evaluation was instrumental in identifying a spectrum of user experience issues and design inconsistencies that might cause confusion or hinder user interactions. 
+            </p>
+            <p>
+                By analysing these findings, we were able to identify critical pain points and areas in need of improvement within the application. The insights garnered from this evaluation served as a compass guiding our subsequent refactoring project. 
+                With a clear understanding of these identified pain points, we strategically channelled our efforts to address and rectify these issues, ensuring that the changes were targeted precisely to enhance the overall user experience and streamline 
+                the app's functionality.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_FE2/Pain Point Ratings.png" alt="" style="width: 80%;"/></span>
+            </div>
+            <p class="figure" style="margin: 0;">Figure 3 — We used a key legend to assign tags for each heuristic to help determine our priorities, and to understand where we needed to focus our efforts on.</p>
+
+            <!-- Quantitative Research -->
+            <h4 class="sub-margin">Quantitative Research</h4>
+            <p>
+                To help gain insight and understanding as to how our users interact with the Myagi product, we used Mouseflow to track user behaviour on various pages of the app. Through the use of Mouseflow, the team was able to analyse clicks, movements, 
+                scrolls, navigation patterns, and also the level of friction users may have on a particular page. This data-driven approach provided quantitative data that was crucial in shaping informed design decisions and allowed the team to identify 
+                pain points, areas of high engagement, and potential usability issues.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_FE2/Mouseflow.png" alt="" /></span>
+            </div>
+            <p class="figure" style="margin: 0;">
+                Figure 4 — As seen in the screenshot above, some high-contact points that the user interacts with includes the <i>'Channels'</i> and <i>'Feedback'</i> pages. From this screenshot, we can clearly understand that this user is interested in 
+                viewing feedback that they receive on the content that they have released to their learners.
+            </p>
+
+            <!-- UI Ideation -->
+            <h4 class="sub-margin">UI Ideation</h4>
+            <p>
+                After the <i>'Discovery'</i> and <i>'Define'</i> stages which included extensive research to help gain a clear understanding of the problem, our users, and potential usability issues, we move on to ideating UI and designs to help solve the problem in question. 
+                Respectively, below are screenshots of one of the ideated options, and the option we selected for the final.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_FE2/FE2 Ideation 1.png" alt="" /></span>
+            </div>
+            <p class="figure" style="margin: 0;">
+                Figure 5.1 — This was one of the ideated options for our filter feature. Although this filter layout is quite popular across a multitude of companies, we believed it was not suitable for the Myagi app mainly for the purpose of maintaining a consistent user experience across our product.
+            </p>
+
+            <div style="margin: 5em 0 0 0;">
+                <span class="img-center"><img src="images/myagi_FE2/FE2 Ideation 2.png" alt="" /></span>
+            </div>
+            <p class="figure">
+                Figure 5.2 — We opted for this filter layout as majority of 'pop-ups' are presented to users in the form of modals throughout the Myagi product.
+            </p>
+
+            <!-- Outcome -->
+            <h4 class="sub-margin" style="margin-top: 0.8em;">Outcome</h4>
+            <p>
+                The project is still in progress, however, the product team has received alot of positive feedback from the customer success team in regards to the redesigned pages of the Myagi product. 
+            </p>
+            <p>These are just some of the wonderful qualitative feedback that we received:</p>
+            <ul>
+                <li><i>“The new feedback feature is great. I can pinpoint exactly who is giving us what feedback. Hoorah!” - Giant US</i></li>
+                <li><i>“The new designs are much more intuitive, easy, and awesome.” - Brooks Running</i></li>
+                <li><i>“We're really pleased with how easy it is for staff to access the tool and the training, and we are finding it very simple, easy, and fun to use the tool” - Silent Night</i></li>
+            </ul>
+            <p>
+                Due to limited time and resources, usability tests and quantitative data was not able to be retrieved after refactored and redesigned pages were released to customers. However, the qualitative feedback we did receive from our customers were an 
+                affirmative indicator that our customers' experience greatly improved. To see more feedback we received, view the <i>'Myagi Home'</i> project <a href="myagi_home.html" class="link">here</a>.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_FE2/FE2 cover.png" alt="" /></span>
+            </div>
+            
+            <!-- Reflection -->
+            <h4 class="sub-margin">Reflection</h4>
+            <p class="p-bold">What do you think was done well?</p>
+            <p class="p-content">
+                Cross-functional collaboration with various teams including: Engineering, Product, Customer Success, and Marketing went well. Async feedback workshops were conducted to gain feedback, suggestions, and ideas from teams and stakeholders. 
+                This was a large project which involved the redesign of the entire Myagi app, which meant that the impact it would have on the business is quite significant. With this knowledge in mind, cross-functional collaboration was a crucial aspect 
+                in ensuring the app meets user, business, and technical needs.
+            </p>
+            <br>
+            <p class="p-bold">What could have been improved?</p>
+            <p class="p-content">
+                Due to time and resource constraints, there was a lack of data and testing after refactored pages were released to customers. The product team mainly relied on feedback that the customer success team received during customer calls. 
+                Moreover, there were occasional feature requests that were highly prioritised, which meant that the team had to compromise on the quality of released pages, and focus on quick delivery instead.
+            </p>
+            <br>
+            <p class="p-bold">What would I do differently if I were to approach the same problem again?</p>
+            <p class="p-content">
+                While the initial Myagi app had user tracking and analytics via Mouseflow, the newly refactored pages did not have that. Hence, I would encourage and push for the team to integrate that so that we would be able to analyse the 
+                performance of the refactored pages. Alternatively, I would also encourage for usability testing post-release of refactored pages. 
+            </p>
+
+            <!-- Next Case Study -->
+            <div class="next">
+                <a href="myagi_home.html" class="main-btn">Next Case Study — Myagi Home&nbsp;&nbsp;></a>
+            </div>
+
+            <!-- Footer -->
+            <div style="margin-top: 12em;">
+                <div>
+                    <span>
+                        <a href="mailto:nguyena.amy@gmail.com" class="footer-link"
+                            id="contrast-colour">nguyena.amy@gmail.com</a>
+                    </span>
+                    <span class="footer-div">/</span>
+                    <span>
+                        <a href="https://www.linkedin.com/in/amy-nguyen-6a862119b/" class="footer-link"
+                            target="_blank">LinkedIn</a>
+                    </span>
+                    <span class="footer-div">/</span>
+                    <span>
+                        <a href="images/Resume.pdf" download="Amy_Nguyen_Resume"
+                            class="footer-link">Resume</a>
+                    </span>
+                </div>
+                <p style="font-size: 14px;">Designed & hand-coded with &#9825;</p>
+                <p style="margin-top: -1.5em; font-size: 14px;">&#169; 2024 Amy Nguyen</p>
+            </div>
+
+            <a id="go-to-top" href="#">&#8593;</a>
+        </div>
+
+        <!-- Scripts -->
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/go-to-top.js"></script>
+        <script src="js/menu.js"></script>
+
+    </div>
+
+    <!-- Mobile/Small Screen View -->
+    <div class="mobile-view">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <header>
+                        <h1 class="name" style="text-align: center;">UH OH!</h1>
+                        <p class="alert-mobile">PLEASE VISIT ME ON A LARGER SCREEN</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="icon" href="images/misc/favicon.png">
+    <title>Myagi Home | Amy Nguyen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="desktop-view">
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="brand">AMY.N</a></li>
+                <div id="nav-right">
+                    <li><a href="index.html">WORK</a></li>
+                    <li><a href="sundry.html">SUNDRY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </div>
+            </ul>
+
+            <!-- Right Nav -->
+            <!-- <div class="menu-icon" onclick="toggleMenu()">
+                <div onclick="openMenu()">
+                    <div onclick="menu(this)">
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                    </div>
+                </div>
+                <ul class="menu-main">
+                    <li><a href="index.html">work</a></li>
+                    <li><a href="play.html">play</a></li>
+                    <li><a href="about.html" class="current-page">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <ul class="menu-content" id="menu">
+                    <li><a href="index.html">work</a></li>
+                    <li><a href="play.html">play</a></li>
+                    <li><a href="about.html" class="current-page">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div> -->
+        </nav>
+
+        <!-- Content Preview -->
+        <div class="align-preview">
+            <span class="img-preview"><img src="images/myagi_home/HOME cover.png" alt="" /></span>
+        </div>
+        
+
+        <!-- Main Content -->
+        <div class="container-content">
+            <h2 style="text-align: center;">Redesigning Myagi Home</h2>
+            
+            <!-- Project Overview -->
+            <h4>Project Overview</h4>
+            <p class="p-hdr" style="margin-top: -1em;">Team</p>
+            <p class="p-content">
+                Scrum team consisted of 3 software engineers, 1 QA engineer, 1 designer, and 1 product manager. 
+                Design team consisted of 3 designers, where I led the Home Page Frontend Refactor project as the designer assigned to the scrum team.
+            </p>
+            <p class="p-hdr">Role</p>
+            <p class="p-content">
+                As the lead designer for this project, I was responsible for redesigning the Myagi app. This involved conducting user research 
+                (interviews, surveys), ideation of UI designs, and handover of designs to engineers. I was also responsible for facilitating feedback 
+                workshops while articulating design decisions from a technical and business standpoint to my scrum team and to stakeholders.
+            </p>
+            <p class="p-hdr">Tools</p>
+            <p class="p-content">
+            <ul>
+                <li>Figma</li>
+                <li>Miro</li>
+                <li>Confluence</li>
+                <li>Jira</li>
+                <li>Storybook</li>
+                <li>Metabase</li>
+                <li>Mouseflow</li>
+                <li>Intercom</li>
+                <li>Productboard</li>
+                <li>Airtable</li>
+                <li>GitHub</li>
+            </ul>
+            </p>
+
+            <!-- What is Myagi? -->
+            <h4 class="sub-margin">What is Myagi?</h4>
+            <p>
+                Myagi is a Retail Sales Enablement platform that lets brand and retailers deliver the right product knowledge to retail sales 
+                associates at scale. Through Myagi, both suppliers and their reseller partners can optimize sell-through by improving what we call 
+                the Knowledge Supply Chain—the path information takes to get from its start to end, across multiple companies and teams and people.
+                If you've ever had issues with important knowledge not getting to the right place, not getting there in time, not being understood, 
+                or easily being forgotten, you probably have a broken Knowledge Supply Chain.
+            </p>
+
+            <!-- Problem Statement -->
+            <h4 class="sub-margin">Problem Statement</h4>
+            <p>
+                The Myagi Home page is not being utilised frequently by users due to the lack of clear informational hierarchy displayed to users, 
+                and lack of understanding regarding users' needs on the Home page. The Home page has also accumulated technical and design-debt which 
+                required critical attention as it is a page that has the most user traffic.
+            </p>
+
+            <!-- Objectives + Goals -->
+            <h4 class="sub-margin">Objectives + Goals</h4>
+            <p>
+                The refactor and redesign of the Home page was a part of the Frontend Refactor project. Our primary objective for this project was to 
+                refactor and redesign this page in order to reduce tech and design-debt, and also to improve the usability of the Home page for our users.
+            </p>
+            <p>
+                As the Home page has the most user traffic, it was imperative for the team to retain the main features that users were familiar with seeing 
+                and using. It was important to ensure that the learning curve and user friction was minimal. To achieve this, we decided to release an MVP 
+                version first. To figure out requirements for the MVP, we collaborated with PMs to conduct a survey, and we then categorised these requirements 
+                by order of priority. This was done so that there was a clear understanding of features that were currently most used by users.
+            </p>
+            <br>
+            <p class="p-bold">MVP Requirements</p>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/MVP Requirements.png" alt="" /></span>
+            </div>
+
+            <!-- Design Approach -->
+            <h4 class="sub-margin">Design Approach</h4>
+            <p>
+                While utilising a Double Diamond design process, our design approach for this project has been depicted in a simplified flow below.
+            </p>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Design Approach.png" alt="" /></span>
+            </div>
+            <p>
+                It was important for the team to understand the problems that we needed to solve for, and also our users' needs when interacting with the Home page. 
+                After the audits and user research (done in the form of surveys) have been completed, we determine key usability issues based on our findings. 
+                During the UI ideation, we try to solve for these issues and attempt to visualise these concepts. Once the concepts have been finalised, we wanted 
+                to get feedback via internal stakeholders to ensure that the concepts would not result in potential issues further down the line. Changes and feedback 
+                were then documented and implemented before handover. Further information on each stage of this approach will be discussed throughout this case study.
+            </p>
+            <p>For more information on the design process and approach, click <a href="myagi_FE2.html" class="link">here</a></p>
+
+            <!-- Product Users -->
+            <h4 class="sub-margin">Product Users</h4>
+            <p>
+                For this project, we targeted four user types:
+            </p>
+            <ul>
+                <li>Retail Admins</li>
+                <li>Brand Admins</li>
+                <li>Sales Associates</li>
+                <li>Team Managers</li>
+            </ul>
+            <p>
+                These user types were ones that frequent the Myagi app most, and are our main user types. User types have different goals when interacting with the Myagi 
+                product. Retail users (Retail Admins, Sales Associates, Team Managers) want to see their performance, progress, find out which content to consume, 
+                and to see what they've completed. Brand Admins want to create content, drive engagement, and view analytics.
+            </p>
+            <p>To see more information on Myagi's product users, click <a href="myagi_FE2.html" class="link">here</a></p>
+
+            <!-- User Flows -->
+            <h4 class="sub-margin">User Flows</h4>
+            <p>
+                Our team dedicated focused efforts to create detailed user flows as a fundamental step before initiating any refactoring. By mapping out user flows, 
+                we aimed to gain a comprehensive understanding of both our product and our users. Through this process, we visualised the pathways users navigate 
+                within the product, analysing their interactions, and decision points. The user flows allowed us to comprehend the existing user journey, identify 
+                pain points, and recognise areas for potential improvement. We created user flows for each feature/section on the Home page including: Feed, 
+                Action Items, and Your Performance.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/User Flow Home Feed.jpg" alt="" /></span>
+            </div>
+            <p class="figure" style="margin: 0;">Figure 1 — User flow mapping out what it might look like for a user who wants to create a post for the feed</p>
+
+            <!-- Heuristics Evaluation -->
+            <h4 class="sub-margin">Heuristic Evaluation</h4>
+            <p>
+                Our team conducted heuristic evaluations and comprehensive audits of our application to delve deep into its usability and functionality. 
+                Through this process, we assessed the product against established usability principles and best practices. By analysing these findings, 
+                we were able to identify critical pain points and areas in need of improvement within the application.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_FE2/Pain Point Ratings.png" alt="" style="width: 80%;"/></span>
+            </div>
+            <p class="figure" style="margin: 0;">Figure 2 — We used a key legend to assign tags for each heuristic to help determine our priorities, and to understand where we needed to focus our efforts on.</p>
+
+            <!-- Survey -->
+            <h4 class="sub-margin">Survey</h4>
+            <p class="p-hdr">Survey Overview</p>
+            <p class="p-content">Prior to refactoring and redesigning the Home page, the team found that there was a lack of documentation regarding this page.</p>
+            <br>
+            <p>As a result, this led to us not knowing:</p>
+            <ul>
+                <li>The purpose of features on the Home page</li>
+                <li>How users are using the Home page</li>
+                <li>Which features are important to users</li>
+            </ul>
+            <br>
+            <p>We needed this information to:</p>
+            <ul>
+                <li>Decide the hierarchy of information on the page</li>
+                <li>Make improvements</li>
+                <li>Prioritise efforts</li>
+                <li>Avoid disruptions to existing user flows</li>
+            </ul>
+            <br>
+            <p>
+                From this knowledge, we believed that conducting a survey would allow us to gain a better understand of our users' needs on the Myagi Home page. We also wanted to gather intel 
+                on how we might be able to improve the Home page as it would help inform our design and product decisions. 
+            </p>
+            
+            <br>
+            <p class="p-hdr">Survey Metrics</p>
+            <p>
+                Using data from Google Analytics, we determined the approximate number of responses we aimed to receive from the survey. As displayed in the screenshot below, the number of <b><i>Active Users</i></b> 
+                for the pathway “/view/home” within the last 7 days (13th - 19th April 2023) was 8390 users. We aimed to have a 5% response rate which was approximately 420 survey responses.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Google Analytics Home.png" alt="" /></span>
+            </div>
+
+            <br>
+            <p class="p-hdr">Survey Distribution</p>
+            <p>
+                In order to target our different user types, we sent out three separate surveys to gather appropriate intel for each user type. As discussed previously, these were the users we targeted and focused on:
+            </p>
+            <ul>
+                <li>Retail Admins</li>
+                <li>Brand Admins</li>
+                <li>Sales Associates</li>
+                <li>Team Managers</li>
+            </ul>
+
+            <br>
+            <p class="p-hdr">Survey Questions</p>
+            <ol>
+                <li>What do you typically use the home page for?</li>
+                <li>Which features on the home page are most important to you?</li>
+                <li>Which features on the home page are least important to you?</li>
+                <li>What pain points do you experience when using the home page?</li>
+                <li>What improvements would you like to see on the home page?</li>
+                <li>Was there anything we missed that you want to let us know?</li>
+            </ol>
+
+            <br>
+            <p class="p-hdr">Outcome</p>
+            <p>
+                The survey was released through Intercom and was displayed to users who were on the Home page. The survey was active for one week.
+            </p>
+            <br>
+            <img src="images/myagi_home/Home-Page-Intercom-Survey.gif" style="width: 100%;"/>
+
+            <!-- Survey Results -->
+            <h4 class="sub-margin">Survey Results</h4>
+            <p>
+                Due to limited time and resources, the survey was only active for 5 days (27th April - 1st May 2023). We received a total of 155 survey 
+                responses, with 89 responses being the highest received from Sales Associates and Team Managers (See image below).
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Survey Stats.png" alt="" /></span>
+            </div>
+
+            <br>
+            <p class="p-hdr">Results</p>
+            <div class="alert alert-light" role="alert">
+                For the purpose of showcasing this project in a concise manner, the results for only one of the questions will be shown (Quantitative data).
+            </div>
+            <p>
+                One of the questions in the survey was <b><i>“What do you typically use the home page for?”</i></b>. As shown in the graphs below, the answers varied depending on the user type.
+            </p>
+            <p>These were the main findings that resulted from this question:</p>
+            <ul>
+                <li>Brand Admins typically use the Home page to click on post content, edit the cover image, and write a post</li>
+                <li>Retail Admins typically use the Home page to view their performance</li>
+                <li>Sales Associates and Team Managers typically use the Home page to view their performance</li>
+            </ul>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Survey Results BA.png" alt="" /></span>
+            </div>
+            <p class="figure">Figure 3.1 — Brand Admins</p>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Survey Results RA.png" alt="" /></span>
+            </div>
+            <p class="figure">Figure 3.2 — Retail Admins</p>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Survey Results SA_TM.png" alt="" /></span>
+            </div>
+            <p class="figure">Figure 3.3 — Sales Associates and Team Managers</p>
+
+            <p class="p-hdr">Additional Feedback</p>
+            <p>
+                In addition to the quantitative feedback we received (Depicted in the graphs above), we also received qualitative feedback from our surveys regarding the questions we asked users 
+                about their pain points, and potential improvements they would like to see on the Home page. The table below includes feedback we received from the survey sent out to Sales Associates 
+                and Team Managers.
+            </p>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Survey Qualitative Feedback.png" alt="" /></span>
+            </div>
+            <p>Some positive feedback we received:</p>
+            <ul>
+                <li>“Keep up the great work!”</li>
+                <li>“Happy with the new and consistent styles that are available.”</li>
+                <li>“I like Myagi.”</li>
+                <li>“Pretty happy with how it works currently”</li>
+            </ul>
+
+            <!-- UI Ideation -->
+            <h4 class="sub-margin">UI Ideation</h4>
+            <p>
+                Using the data we gained from the surveys and audits, we ideated multiple options for the Home page in order to determine and visualise concepts that would solve for the usability 
+                issues we discovered during the research phase. Below are two options we ideated which experiments with different layouts for this page.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Home Ideation 1.png" alt="" /></span>
+            </div>
+            <p class="figure">
+                Figure 4.1 — This option places the feed on a higher visual hierarchy compared to the <i>'Action Items'/'Tasks'</i> and <i>'Your Performance'</i> section. 
+                This option was mainly targeted towards Brand Admins where majority of them use the Home page to “Click on post content” and/or “Write a post”.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Home Ideation 2.png" alt="" /></span>
+            </div>
+            <p class="figure" style="margin: 0;">
+                Figure 4.2 — This option places the <i>'Action Items'/'Tasks'</i> and <i>'Your Performance'</i> on a higher visual hierarchy compared to the feed. From the survey results, we found that majority of 
+                users who responded were Retail Admins, Sales Associates, and Team Managers; And that they all typically use the Home page to view their performance. Hence, we wanted to ideate an option that emphasises that clearly on the Home page for the vast majority of our users.
+            </p>
+
+            <!-- Feedback Workshop -->
+            <h4 class="sub-margin">Feedback Workshop</h4>
+            <p>
+                After a few iterations of UI ideation, the team selected two options to get feedback on. We decided to get feedback via internal stakeholders, however, due to time-zone differences, we opted for an async method of gathering feedback. Using Miro, 
+                we included the project context, step-by-step instructions of what to do, and the type of feedback we were looking for. As the Home page was a significant page within our product which garnered alot of user traffic, this feedback workshop ensured 
+                that we were able to receive a range of feedback from various departments including: Customer Success, Marketing, Engineering, and Product teams.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Async Feedback TODO.png" alt="" style="width: 70%;"/></span>
+            </div>
+
+            <!-- Post-Feedback Workshop -->
+            <h4 class="sub-margin">Post-Feedback Workshop</h4>
+            <p>
+                The Async Feedback Workshop was open for 1 week before we closed it to retrieve the feedback that was given. As shown in the screenshot below, internal stakeholders placed comments and feedback on Miro. We found that this method of getting feedback was efficient, 
+                and allowed internal stakeholders to provide feedback at a time that suits them.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Async Feedback Comments.png" alt="" /></span>
+            </div>
+            <br>
+            <p class="p-hdr">Organising Feedback</p>
+            <p>
+                After closing the Feedback Workshop, we went through the feedback and organised it by type (Improvement, New Feature, To Consider), Impact, and Effort. Categorising feedback by Impact vs. Effort allowed us to prioritise which feedback we could implement efficiently 
+                in the time frame that we had remaining. We targeted and focused on feedback that had a <b><i>High Impact</i></b> and <b><i>Low Effort</i></b>.
+            </p>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Async Feedback Documentation.png" alt="" /></span>
+            </div>
+
+            <!-- Outcome -->
+            <h4 class="sub-margin">Outcome</h4>
+            <p class="p-hdr">Original vs. Redesigned - Overall</p>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Overall Home FE1.png" alt="" /></span>
+            </div>
+            <p class="figure">Figure 5.1 — Original (FE1)</p>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Overall Home FE2.png" alt="" /></span>
+            </div>
+            <p class="figure">Figure 5.2 — Redesigned (FE2)</p>
+            <br>
+
+            <p class="p-hdr">Original vs. Redesigned - Feed</p>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Home FE1 Feed Post.png" alt="" /></span>
+            </div>
+            <p class="figure">Figure 6.1 — Original Feed Post (FE1)</p>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Home FE2 Feed Post.png" alt="" /></span>
+            </div>
+            <p class="figure">Figure 6.2 — Redesigned Feed Post (FE2)</p>
+            <br>
+
+            <p class="p-hdr">Original vs. Redesigned - Your Performance</p>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Home FE1 Your Performance.png" alt="" /></span>
+            </div>
+            <p class="figure">Figure 7.1 — Original Your Performance (FE1)</p>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/Home FE2 Your Performance.png" alt="" /></span>
+            </div>
+            <p class="figure">Figure 7.2 — Original Your Performance (FE2)</p>
+
+            <p class="p-hdr">Final</p>
+            <p>
+                One of the main objectives, which was discussed initially in the MVP requirements, was the need for clear visual hierarchy on the Home page. From the survey results, we found that alot 
+                of our users felt that the Home page was “hard to navigate”. As discussed previously in this case study, we also found that majority of users who responded to the survey were Retail Admins, 
+                Sales Associates, and Team Managers; And that they all typically use the Home page to view their performance (<i>'Your Performance'</i> section). As a result, the final option that the team 
+                selected emphasises the <i>'Your Performance'</i> section first, with it being located at the top of the page. The feed and the <i>'Action Items'/'Tasks'</i> follow after in terms of information 
+                and visual hierarchy on the page.
+            </p>
+            <br>
+            <div>
+                <span class="img-center"><img src="images/myagi_home/HOME cover.png" alt="" /></span>
+            </div>
+
+            <!-- Reflection -->
+            <h4 class="sub-margin">Reflection</h4>
+            <p class="p-bold">What do you think was done well?</p>
+            <p class="p-content">
+                User research went well as we were able to gather and collect the necessary information needed in order to successfully refactor the Home page. In particular, we conducted a survey via Intercom, 
+                which was displayed to users when they arrived on the Home page of the Myagi app. As a result, we were able to gain valuable quantitative and qualitative feedback.
+            </p>
+            <br>
+            <p class="p-bold">What could have been improved?</p>
+            <p class="p-content">
+                During usability testing, we had some users who were not fluent in English. As a result, there was a small language barrier when asking questions, and also when they interacted with the mockups 
+                which were all in English. We could definitely improve on this by adding text translations to mockups. However, it is also important to understand that this may not be applicable to every usability 
+                test conducted in the case that there are time constraints and limited resources. 
+            </p>
+            <br>
+            <p class="p-bold">What would I do differently if I were to approach the same problem again?</p>
+            <p class="p-content">
+                The Myagi Home page had alot of user traffic, which was why it was necessary to ensure that the redesigned page did not cause any additional friction to our users' experience. However, although the 
+                refactoring and redesigning of this page was a critical project for the team, there was a lack of usability testing after its release. Hence, if I were to approach a similar project, I would encourage 
+                and push for the team to implement clearly defined success metrics. Additionally, I believe it would also be beneficial to have the survey active for longer than the 5 days we had it active for. 
+                This was a result of limited time and resources, however, the team would have been able to gain alot more valuable insight if there was more time and opportunity for users to respond to the survey.
+            </p>
+
+            <!-- Next Case Study -->
+            <div class="next">
+                <a href="myagi_ds.html" class="main-btn">Next Case Study — Myagi Design System&nbsp;&nbsp;></a>
+            </div>
+
+            <!-- Footer -->
+            <div style="margin-top: 12em;">
+                <div>
+                    <span>
+                        <a href="mailto:nguyena.amy@gmail.com" class="footer-link"
+                            id="contrast-colour">nguyena.amy@gmail.com</a>
+                    </span>
+                    <span class="footer-div">/</span>
+                    <span>
+                        <a href="https://www.linkedin.com/in/amy-nguyen-6a862119b/" class="footer-link"
+                            target="_blank">LinkedIn</a>
+                    </span>
+                    <span class="footer-div">/</span>
+                    <span>
+                        <a href="images/Resume.pdf" download="Amy_Nguyen_Resume"
+                            class="footer-link">Resume</a>
+                    </span>
+                </div>
+                <p style="font-size: 14px;">Designed & hand-coded with &#9825;</p>
+                <p style="margin-top: -1.5em; font-size: 14px;">&#169; 2024 Amy Nguyen</p>
+            </div>
+
+            <a id="go-to-top" href="#">&#8593;</a>
+        </div>
+
+        <!-- Scripts -->
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/go-to-top.js"></script>
+        <script src="js/menu.js"></script>
+
+    </div>
+
+    <!-- Mobile/Small Screen View -->
+    <div class="mobile-view">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <header>
+                        <h1 class="name" style="text-align: center;">UH OH!</h1>
+                        <p class="alert-mobile">PLEASE VISIT ME ON A LARGER SCREEN</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
